@@ -1,1 +1,1 @@
-# green-deal
+# Green Deal Ukraine
