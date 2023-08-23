@@ -1,0 +1,54 @@
+.btn-icon {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  line-height: $line-height;
+  white-space: nowrap;
+  user-select: none;
+  padding: 0;
+  background-color: transparent !important;
+  color: $secondary-color;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+
+    #{$block-name}__icon-img {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+
+  &:active {
+
+    #{$block-name}__icon-img {
+      background-color: $link-color;
+    }
+  }
+
+  &__icon-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+    background-color: $white;
+    transition: all $transition-time;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}

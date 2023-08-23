@@ -1,0 +1,25 @@
+.search-panel-top {
+  height: 108px !important;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__inner {
+    align-items: center;
+  }
+
+  &__form-col {
+    @include col(xs, 10);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 10, $grid-columns, 40px);
+  }
+
+  &__btn-col {
+    @include col(xs, 2);
+    @include col(xxl, 1, $grid-columns, 40px);
+  }
+}

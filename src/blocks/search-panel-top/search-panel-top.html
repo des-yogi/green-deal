@@ -1,0 +1,32 @@
+<!--DEV
+@ @include('blocks/search-panel-top/search-panel-top.html')
+-->
+
+<section class="offcanvas offcanvas-top  search-panel-top" tabindex="-1" id="offcanvasSearch" aria-labelledby="offcanvasSearchLabel">
+  <h5 class="visually-hidden" id="offcanvasSearchLabel">Пошук по сайту</h5>
+  <div class="offcanvas-body  search-panel-top__body  container">
+    <div class="row  search-panel-top__inner">
+
+      <div class="search-panel-top__form-col">
+        <form class="search-form" action="" method="post">
+          <label class="field-text" style="margin-bottom: 0;">
+            <span class="visually-hidden">Шукати…</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="search" name="search" value="" placeholder="Шукати…">
+              <!-- <span class="field-text__help-text">Пояснение</span> -->
+            </span>
+          </label>
+        </form>
+      </div>
+
+      <div class="search-panel-top__btn-col">
+        <button class="btn-icon" data-bs-dismiss="offcanvas" aria-label="Закрити">
+          <span class="btn-icon__icon-img" aria-hidden="true">
+            <svg width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
