@@ -1,0 +1,76 @@
+<!--DEV
+@ @include('blocks/page-header/page-header.html')
+-->
+
+<header class="container  page-header  page-header--sticky">
+  <div class="page-header__inner">
+    <a href="index.html" class="logo">
+      <img src="img/green-deal-logo.svg" alt="Green Deal Ukraine logo" width="183" height="52">
+    </a>
+
+    @@include('../../blocks/main-nav/main-nav.html')
+
+    <div id="mobMenu" class="container  mob-menu__wrapper  collapse">
+
+      <div class="mob-menu__content">
+        <div class="mob-menu__form-wrapper">
+          <ul class="list-nostyled  mob-menu__lang-switcher">
+            <li class="mob-menu__lang-switcher-item  active">
+              <a class="mob-menu__lang-switcher-link">UA</a>
+            </li>
+            <li class="mob-menu__lang-switcher-item">
+              <a href="#" class="mob-menu__lang-switcher-link">PL</a>
+            </li>
+            <li class="mob-menu__lang-switcher-item">
+              <a href="#" class="mob-menu__lang-switcher-link">DE</a>
+            </li>
+          </ul>
+
+          <form class="mob-menu__search" action="" method="post">
+            <label class="field-text">
+              <span class="visually-hidden">Пошук…</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="search" placeholder="Пошук…">
+                <!-- <span class="field-text__help-text">Пояснение</span> -->
+              </span>
+            </label>
+          </form>
+        </div>
+
+        @@include('../../blocks/mob-menu/mob-menu.html')
+
+      </div>
+
+    </div>
+
+    <div class="page-header__user-menu">
+      <button class="burger" aria-label="Переключатель мобильного меню" data-bs-toggle="collapse" data-bs-target="#mobMenu" aria-expanded="false" aria-controls="mobMenu">
+        <span></span>
+      </button>
+
+      <div class="page-header__desktop-view">
+        <button class="btn-icon  page-header__search-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+          <span class="visually-hidden">Пошук по сайту</span>
+          <span class="btn-icon__icon-img" aria-hidden="true">
+            <svg width="19" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+          </span>
+        </button>
+
+        <div class="lang-switcher  dropdown-center">
+          <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Вибір мови">
+            <span>Ua</span>
+          </button>
+          <ul class="dropdown-menu  list-nostyled">
+            <li class="dropdown-item  active"><a href="#">Ua</a></li>
+            <li class="dropdown-item"><a href="#">Pl</a></li>
+            <li class="dropdown-item"><a href="#">En</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</header>
+

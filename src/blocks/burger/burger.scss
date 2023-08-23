@@ -1,0 +1,87 @@
+.burger {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+  margin-right: -4px;
+  color: $secondary-color;
+  border: none;
+  background-color: $body-bg;
+  user-select: none;
+  cursor: pointer;
+
+  // &:focus,
+  // &:active {
+  //   color: $main-color;
+  // }
+
+  @media (min-width: ($menu-desktop-width - 1)) {
+    display: none;
+  }
+
+  > span {
+    display: block;
+    //align-items: center;
+    //justify-content: center;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 16px;
+    transition: all $transition-time;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background: currentColor;
+      border-radius: 16px;
+      transform-origin: 50% 50%;
+      transition: all $transition-time;
+    }
+
+    &::before {
+      left: -16px;
+    }
+
+    &::after {
+      right: -16px;
+    }
+  }
+
+  &[aria-expanded=true] {
+
+    > span {
+      height: 32px;
+      transition: all $transition-time;
+      //background: transparent;
+
+      &::before,
+      &::after {
+        height: 32px;
+        transition: all $transition-time;
+        //top: 50%;
+        //transform: translateY(-50%);
+      }
+
+      // &::before {
+      //   transform: rotate3d(0, 0, 1, 45deg);
+      // }
+
+      // &::after {
+      //   transform: rotate3d(0, 0, 1, -45deg);
+      // }
+    }
+  }
+}

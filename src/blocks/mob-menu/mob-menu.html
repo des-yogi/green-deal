@@ -1,0 +1,71 @@
+<!--DEV
+@ @include('blocks/mob-menu/mob-menu.html')
+-->
+
+<nav class="mob-menu" id="mobNav">
+  <ul class="list-nostyled  mob-menu__list">
+    <li class="mob-menu__item  mob-menu__item--nested">
+      <a class="mob-menu__link" href="#mobMenuItem-1" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobMenuItem-1" role="button">
+        <span>Про проєкт</span>
+      </a>
+
+      <ul id="mobMenuItem-1" class="list-nostyled  mob-menu__list  collapse" data-bs-parent="#mobNav">
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Про проєкт</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Команда</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Консультативна рада</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Вакансії</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Партнери</a>
+        </li>
+      </ul>
+    </li>
+    <li class="mob-menu__item  active">
+      <a href="#" class="mob-menu__link">Новини</a>
+    </li>
+    <li class="mob-menu__item">
+      <a href="#" class="mob-menu__link">Події</a>
+    </li>
+    <li class="mob-menu__item  mob-menu__item--nested">
+      <a class="mob-menu__link" href="#mobMenuItem-2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobMenuItem-2" role="button">
+        <span>Продукти</span>
+      </a>
+
+      <ul id="mobMenuItem-2" class="list-nostyled  mob-menu__list  collapse" data-bs-parent="#mobNav">
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Навчальні програми</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Аналітичні продукти</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Дані та моделювання</a>
+        </li>
+      </ul>
+    </li>
+    <li class="mob-menu__item  mob-menu__item--nested">
+      <a class="mob-menu__link" href="#mobMenuItem-3" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobMenuItem-3" role="button">
+        <span>GD tracker</span>
+      </a>
+
+      <ul id="mobMenuItem-3" class="list-nostyled  mob-menu__list  collapse" data-bs-parent="#mobNav">
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Новини</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#" class="mob-menu__link">Події</a>
+        </li>
+      </ul>
+    </li>
+    <li class="mob-menu__item">
+      <a href="#" class="mob-menu__link">Контакти</a>
+    </li>
+  </ul>
+</nav>
