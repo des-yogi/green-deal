@@ -1,9 +1,65 @@
-// В этом файле должны быть стили для БЭМ-блока analytics-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .analytics-card {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 32px);
+    @include col(xl, 6, $grid-columns, 40px);
+  }
+
+  &__inner-row {
+    gap: 24px 0;
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col(md, 5, $grid-columns, 32px);
+    @include col(xl, 6, $grid-columns, 40px);
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 7, $grid-columns, 32px);
+    @include col(xl, 6, $grid-columns, 40px);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+
+  }
+
+  &__title {
+    margin: 16px 0;
+    text-transform: none;
+
+    a {
+      color: inherit;
+
+      &:active {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+
+  &__intro {
+
+  }
 }

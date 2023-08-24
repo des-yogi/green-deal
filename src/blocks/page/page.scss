@@ -338,21 +338,134 @@ a {
 
 .main-content {
 
-  & > * + * {
+  & > * {
     margin-top: 56px;
+    margin-bottom: 56px;
 
     @media (min-width: $screen-md) {
       margin-top: 72px;
+      margin-bottom: 72px;
     }
 
     @media (min-width: $screen-xl) {
-      margin-top: 104px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
 .dropdown-menu {
   border-radius: $border-radius;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 8px;
+  font-size: $font-size-lg;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $main-color;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 11px;
+    height: 8px;
+    margin-left: 10px;
+    transform: rotate(-90deg) translateX(-1px);
+    background-position: center;
+    background-size: 11px 8px;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-down.svg', fill=$secondary-color);
+  }
+}
+
+.download-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 16px;
+  width: 100%;
+  min-height: 48px;
+  font-family: $font-family;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1;
+  text-decoration: none !important;
+  color: $white;
+  border-radius: 0 0 $border-radius $border-radius;
+  background-color: $secondary-color;
+  user-select: none;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+    background-color: rgba($secondary-color, 0.2);
+  }
+
+  &:active {
+    color: $white;
+    background-color: $main-color;
+  }
+
+  &--read-more {
+    justify-content: center;
+    margin-top: 40px;
+    border: none;
+    border-radius: $border-radius;
+
+    @media (min-width: $screen-md) {
+      margin-top: 48px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 56px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 16px;
+
+      @media (min-width: $screen-xl) {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+.tag {
+  padding: 0 8px;
+  flex: 0 0 auto;
+  background-color: $light-gray;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.publishedon {
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);

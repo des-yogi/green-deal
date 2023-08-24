@@ -1,9 +1,12 @@
-// В этом файле должны быть стили для БЭМ-блока news-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .news-slider {
 
   $block-name:                &; // #{$block-name}__element
 
+  .marked-headings {
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 32px;
+    }
+  }
 }

@@ -1,11 +1,66 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="container  page-footer">
+
+  <div class="row  page-footer__inner">
+
+    <div class="page-footer__left-col">
+      <div>
+        <div class="row">
+
+          <div class="page-footer__logo-col">
+            <a href="index.html" class="logo  logo--footer">
+              <img src="img/green-deal-logo.svg" alt="Green Deal Ukraine logo" width="183" height="52" loading="lazy">
+            </a>
+
+            <section class="social-links  social-links--footer">
+              <h2 class="visually-hidden">Посилання на соц. мережі</h2>
+              <ul class="list-nostyled  social-links__list">
+                <li class="social-links__item">
+                  <a href="#" class="social-links__link" target="_blank" rel="nofollow noopener">
+                    <span class="social-links__icon">
+                      <svg width="16" height="16" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin"></use></svg>
+                    </span>
+                    <span class="social-links__caption">LinkedIn</span>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#" class="social-links__link" target="_blank" rel="nofollow noopener">
+                    <span class="social-links__icon">
+                      <svg width="19" height="17" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#x-twitter"></use></svg>
+                    </span>
+                    </span>
+                    <span class="social-links__caption">X (ex Twitter)</span>
+                  </a>
+                </li>
+                <!-- <li class="social-links__item">
+                  <a href="#" class="social-links__link" target="_blank" rel="nofollow noopener">
+                    <span class="social-links__icon  social-links__icon--fb">
+                      <svg width="13" height="26" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"></use></svg>
+                    </span>
+                    </span>
+                    <span class="social-links__caption">Facebook</span>
+                  </a>
+                </li> -->
+              </ul>
+            </section>
+          </div>
+
+          <div class="page-footer__contacts-col">
+            @@include('../../blocks/contact-block/contact-block.html')
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer__right-col">
+      @@include('../../blocks/founders-block/founders-block.html')
+    </div>
+
+  </div>
+
+  @@include('../../blocks/copyrights/copyrights.html')
 </footer>

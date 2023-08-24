@@ -1,0 +1,71 @@
+.swiper-controls {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 32px;
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    box-sizing: border-box;
+  }
+
+  .swiper-pagination,
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+  }
+
+  .swiper-pagination {
+    flex: 1 1 auto;
+    margin-right: 24px;
+  }
+
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    height: 8px;
+    border-radius: 4px;
+    background-color: $light-gray;
+    overflow: hidden;
+
+    .swiper-pagination-progressbar-fill {
+      height: inherit;
+      border-radius: inherit;
+      background-color: $secondary-color;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    flex: 0 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: $secondary-color;
+
+    &::after {
+      display: none;
+    }
+
+    svg {
+      width: 41px;
+      height: 32px;
+      fill: currentColor;
+    }
+  }
+
+  .swiper-button-prev {
+    margin-right: 16px;
+
+    svg {
+      transform: scale(-1,1);
+    }
+  }
+}

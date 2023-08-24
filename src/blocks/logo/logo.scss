@@ -22,6 +22,11 @@
   }
 
   &--footer {
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 56px;
+    }
 
     img {
       width: 148px;

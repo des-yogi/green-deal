@@ -1,4 +1,4 @@
-.social-links {
+.contact-block {
   transform: translateX(-8px);
 
   $block-name:                &; // #{$block-name}__element
@@ -6,13 +6,13 @@
   &__item {
 
     & + & {
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 
   &__link {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     padding: 8px 0 8px 8px;
     color: inherit;
@@ -21,12 +21,8 @@
     &:focus {
 
       #{$block-name}__icon {
-        color: $secondary-color;
-        background-color: $white;
-
-        &--fb {
-          border: 1px solid $secondary-color;
-        }
+        color: $white;
+        background-color: $secondary-color;
       }
     }
 
@@ -36,22 +32,20 @@
         color: $white;
         background-color: $main-color;
         border-color: $main-color;
-
-        &--fb {
-          border: none;
-        }
       }
     }
   }
 
   &__icon {
+    flex: 0 0;
+    flex-basis: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 32px;
     height: 32px;
-    color: $white;
-    background-color: $secondary-color;
+    color: $secondary-color;
+    background-color: $white;
     border-radius: 50%;
     border: 1px solid $secondary-color;
     transition: all $transition-time;
@@ -60,34 +54,17 @@
       fill: currentColor;
       transition: fill $transition-time;
     }
-
-    &--fb {
-      position: relative;
-      border: none;
-
-      svg {
-        position: absolute;
-        bottom: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 13px;
-        height: 26px;
-      }
-    }
   }
 
   &__caption {
+    padding-top: 4px;
     font-size: $font-size-lg;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.2;
     color: $text-color;
     text-decoration: none !important;
   }
 
   &--footer {
-
-    // @media (min-width: $screen-xs) and (max-width: $screen-xl) {
-    //   margin-bottom: 24px;
-    // }
   }
 }

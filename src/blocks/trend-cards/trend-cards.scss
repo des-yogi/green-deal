@@ -2,4 +2,93 @@
 
   $block-name:                &; // #{$block-name}__element
 
+
+  &__wrapper {
+
+    .marked-headings {
+      margin-bottom: 24px;
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: 32px;
+      }
+    }
+
+    & > .row {
+      gap: 40px;
+
+      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+        gap: 80px;
+      }
+
+      @media (min-width: $screen-xl) {
+        gap: 0;
+      }
+    }
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 32px);
+    @include col(xl, 4, $grid-columns, 40px);
+    //@include col(xxl, 3, $grid-columns, 40px);
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+      position: relative;
+
+      &:not(:last-child)::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        right: 16px;
+        left: 16px;
+        height: 2px;
+        background-color: $secondary-color;
+      }
+    }
+
+    &:nth-child(even) {
+
+      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+
+        #{$block-name}__inner-row {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 12, $grid-columns, 40px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 12, $grid-columns, 40px);
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-transform: none;
+
+    a {
+      color: inherit;
+
+      &:active {
+        color: $main-color;
+        text-decoration: none;
+      }
+    }
+  }
 }

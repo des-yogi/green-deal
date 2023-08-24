@@ -15,7 +15,7 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main>
+      <main class="main">
 
         @@include('blocks/hero/hero.html')
 
@@ -24,68 +24,194 @@
           <section class="trend-cards__wrapper">
             @@include('blocks/marked-headings/marked-headings.html', {
               "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "Напрямки роботи",
+              "addClass": ""
+            })
+
+            <div class="row">
+              <div class="trend-cards__col">
+                @@include('blocks/trend-cards/trend-cards.html', {
+                  "img": "data-modeling",
+                  "headings": "Дані та моделювання"
+                })
+              </div>
+
+              <div class="trend-cards__col">
+                @@include('blocks/trend-cards/trend-cards.html', {
+                  "img": "analitic-advices",
+                  "headings": "Аналіз політики та поради"
+                })
+              </div>
+
+              <div class="trend-cards__col">
+                @@include('blocks/trend-cards/trend-cards.html', {
+                  "img": "capacity-building",
+                  "headings": "Нарощування потенціалу"
+                })
+              </div>
+            </div>
+          </section>
+
+          <section class="news-slider">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
               "tagInner": "a",
               "href": "href='#'",
-              "text": "Напрямки роботи",
+              "text": "Новини",
               "addClass": "marked-headings--link"
             })
 
-            @@include('blocks/trend-cards/trend-cards.html')
-            @@include('blocks/trend-cards/trend-cards.html')
-            @@include('blocks/trend-cards/trend-cards.html')
+            <div class="swiper  news-slider__container">
+              <div class="swiper-wrapper">
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+              </div>
+
+              @@include('blocks/swiper-controls/swiper-controls.html')
+            </div>
           </section>
 
+          <section class="analytics-card__wrapper">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "аналітичні продукти",
+              "addClass": ""
+            })
 
+            <div class="row  analytics-card__row">
 
-          <h1>Заголовок 1 ур</h1>
-          <button class="btn">
-            <span>Кнопка</span>
-          </button>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего <a href="#">рукопись знаках текста коварный</a>, рыбного родного подпоясал наш последний текст большой строчка над!</p>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів Green Deal Ukraine',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.'
+                })
+              </div>
 
-          <h2>Заголовок 2 ур</h2>
-          <button class="btn  btn--outlined">
-            <span>Кнопка</span>
-          </button>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування.'
+                })
+              </div>
 
-          <h3>Заголовок 3 ур</h3>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+            </div>
 
-          <h4>Заголовок 4 ур</h4>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+            <button class="download-link  download-link--read-more">
+              <span>Показати більше</span>
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-down-big"></use></svg>
+            </button>
 
-          <h5>Заголовок 5 ур</h5>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+          </section>
 
-          <h6>Заголовок 6 ур</h6>
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+          <section class="news-slider  events-slider">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "a",
+              "href": "href='#'",
+              "text": "події",
+              "addClass": "marked-headings--link"
+            })
 
-          <ul>
-            <li>Пример списка 1</li>
-            <li>Пример списка 2</li>
-            <li>Пример списка 3</li>
-            <li>Пример списка 4</li>
-            <li>Пример списка 5</li>
-          </ul>
+            <div class="swiper  events-slider__container">
+              <div class="swiper-wrapper">
 
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
 
-          <blockquote>
-            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс своего рукопись знаках текста коварный, рыбного родного подпоясал наш последний текст большой строчка над!</p>
-            <p>Name Surname</p>
-          </blockquote>
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
 
-          <ol>
-            <li>Пример списка 1</li>
-            <li>Пример списка 2</li>
-            <li>Пример списка 3</li>
-            <li>Пример списка 4</li>
-            <li>Пример списка 5</li>
-          </ol>
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+              </div>
+
+              @@include('blocks/swiper-controls/swiper-controls.html')
+            </div>
+          </section>
+
+          <section class="partners-slider">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "Партнери",
+              "addClass": ""
+            })
+
+            <div class="partners-slider__container"></div>
+
+          </section>
 
         </div>
+
+        @@include('blocks/contact-inset/contact-inset.html')
 
       </main>
 
