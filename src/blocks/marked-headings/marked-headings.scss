@@ -3,6 +3,20 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &.h1 {
+
+    #{$block-name}__text {
+
+      &::before {
+        transform: translateY(-5px);
+
+        @media (min-width: $screen-xl) {
+          transform: translateY(-9px);
+        }
+      }
+    }
+  }
+
   &__text {
     display: inline-block;
     vertical-align: baseline;

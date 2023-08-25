@@ -42,10 +42,10 @@
 
   &--disabled,
   &:disabled {
-    color: $main-color;
-    border-color: $white;
-    background-color: $white !important;
-    opacity: $opacity;
+    //opacity: $opacity;
+    color: $text-muted;
+    border-color: $light-gray;
+    background-color: $light-gray !important;
     cursor: not-allowed;
 
     @at-root a.btn-ondark--disabled {
@@ -72,10 +72,10 @@
 
     &--disabled,
     &:disabled {
-      opacity: $opacity;
-      color: $white;
-      background-color: transparent !important;
-      border-color: $white;
+      //opacity: $opacity;
+      color: $light-gray !important;
+      background-color: rgba($white, 0.2) !important;
+      border-color: $medium-gray !important;
       cursor: not-allowed;
 
       @at-root a.btn--outlined--disabled {

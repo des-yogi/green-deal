@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Аналітичний звіт</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/top-decor/top-decor.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  main-content">
+
+          <article class="analytics-card__page">
+
+            <h1 class="h3">Report: Public Funding for Powerfuels Projects Vol. II</h1>
+            <p class="h5  analytics-card__intro">Developments since summer 2021 and recommendations for policymakers</p>
+
+            <div class="analytics-card__report-content  clearfix">
+
+              <div class="analytics-card__img-wrapper">
+                <a href="#" class="embed-responsive embed-responsive--2-3  analytics-card__img" tabindex="-1">
+                  <picture>
+                    <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">
+                    <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">
+
+                    <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="885" height="1326" loading="lazy">
+                  </picture>
+                </a>
+                <a href="#" class="download-link" download>
+                  <span>Завантажити <span class="visually-hidden">документ</span></span>
+                  <svg width="19" height="19" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+                </a>
+              </div>
+
+              <p>This report is based on an extended and updated version of the Global Alliance Powerfuels’ database of public funding programmes for green hydrogen and other powerfuels (see here for the previous report on the topic). The database now includes 224 support schemes from 44 countries and the EU. The report analyses the geographical and technological scope of these funding programmes, and differentiates between funding structures, categorising programmes into stand-alone (independent) and overarching programmes with sub-programmes. Based on the results of a best-in-class assessment, the report also provides an in-depth look at five selected support measures from different world regions and their priorities.</p>
+
+              <p>This report is based on an extended and updated version of the Global Alliance Powerfuels’ database of public funding programmes for green hydrogen and other powerfuels (see here for the previous report on the topic). The database now includes 224 support schemes from 44 countries and the EU. The report analyses the geographical and technological scope of these funding programmes, and differentiates between funding structures, categorising programmes into stand-alone (independent) and overarching programmes with sub-programmes. Based on the results of a best-in-class assessment, the report also provides an in-depth look at five selected support measures from different world regions and their priorities.</p>
+
+              <p>Despite an increase in funding in the US, Europe still leads in terms of absolute funding volume, while Germany is ahead in terms of the number of funding programmes for which powerfuels are eligible. South America and Africa stand out as regions with a number of newly established funding programmes. </p>
+
+              <p>Further public and private investments into powerfuels are needed for a path that is consistent with achieving net-zero emissions by 2050 globally. In addition, 90% of announced projects currently still lack a final investment decision (FID). This shows that more public funding is still needed, as well as greater activation of private capital. Although the report shows a shift away from R&D funding, it remains important to develop powerfuels technologies at lower technology readiness levels. Further funding is also needed for OPEX, infrastructure and off-take. The report further highlights the importance of a conducive regulatory framework, as it affects the eligibility and effectiveness of programmes. Finally, funding for projects in the Global South can face different and/or additional challenges than for projects in the Global North. Specifically, creating co-benefits for local economies and sustainable development are important.</p>
+
+              <p>Members of the Global Alliance Powerfuels have access to the full database and results of the in-depth evaluation. If you would like to add to the database or to receive further information about this publication, please contact us at powerfuels(at)dena.de.</p>
+
+              <p>Image credits: <a href="#">mapchart.net/world</a></p>
+
+              @@include('blocks/share-links/share-links.html')
+
+            </div>
+
+          </article>
+
+          <aside class="news-slider">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "a",
+              "href": "href='#'",
+              "text": "Новини",
+              "addClass": "marked-headings--link"
+            })
+
+            <div class="swiper  news-slider__container">
+              <div class="swiper-wrapper">
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'ФРН змушена заощаджувати газ та розширювати використання вугілля для електростанцій – міністр економіки',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+                })
+
+                @@include('blocks/news-card/news-card.html', {
+                  "addClass": "swiper-slide ",
+                  "title": 'Гібридна подія – фінансування проектів Powerfuels – 24 квітня 2023 р',
+                  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae…'
+                })
+
+              </div>
+
+              @@include('blocks/swiper-controls/swiper-controls.html')
+            </div>
+          </aside>
+
+        </div>
+
+        @@include('blocks/contact-inset/contact-inset.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-panel-top/search-panel-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

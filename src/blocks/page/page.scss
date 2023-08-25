@@ -324,7 +324,7 @@ a {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: darken($medium-gray, 5%);
+    background-color: darken($secondary-color, 5%);
   }
 }
 
@@ -352,9 +352,9 @@ a {
       margin-bottom: 100px;
     }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    // &:last-child {
+    //   margin-bottom: 0;
+    // }
   }
 }
 
