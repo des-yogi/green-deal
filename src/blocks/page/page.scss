@@ -455,6 +455,7 @@ a {
   padding: 0 8px;
   flex: 0 0 auto;
   background-color: $light-gray;
+  border-radius: $border-radius;
 
   &__wrapper {
     display: flex;

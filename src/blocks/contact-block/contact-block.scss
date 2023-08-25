@@ -27,11 +27,16 @@
     }
 
     &:active {
+      text-decoration: none;
 
       #{$block-name}__icon {
         color: $white;
         background-color: $main-color;
         border-color: $main-color;
+      }
+
+      #{$block-name}__caption {
+        color: $main-color;
       }
     }
   }

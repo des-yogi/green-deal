@@ -1,5 +1,5 @@
 (function(){
-  const swiper = new Swiper('.news-slider__container', {
+  const news = new Swiper('.news-slider__container', {
     speed: 400,
     spaceBetween: 40,
      breakpoints: {

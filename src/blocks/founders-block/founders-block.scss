@@ -10,10 +10,6 @@
     text-transform: none;
   }
 
-  &__list {
-
-  }
-
   &__item {
 
     & + & {
@@ -23,5 +19,8 @@
 
   &__link {
 
+    img {
+      display: block;
+    }
   }
 }

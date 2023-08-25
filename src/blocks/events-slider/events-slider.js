@@ -1,5 +1,5 @@
 (function(){
-  const swiper = new Swiper('.events-slider__container', {
+  const events = new Swiper('.events-slider__container', {
     speed: 400,
     spaceBetween: 40,
      breakpoints: {

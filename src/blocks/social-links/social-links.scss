@@ -31,6 +31,7 @@
     }
 
     &:active {
+      text-decoration: none;
 
       #{$block-name}__icon {
         color: $white;
@@ -40,6 +41,10 @@
         &--fb {
           border: none;
         }
+      }
+
+      #{$block-name}__caption {
+        color: $main-color;
       }
     }
   }
