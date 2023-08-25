@@ -43,7 +43,9 @@
     "swiper-controls": [],
     "contact-block": [],
     "contact-form": [],
-    "founders-block": []
+    "founders-block": [],
+    "top-decor": [],
+    "share-links": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

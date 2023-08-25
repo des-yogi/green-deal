@@ -43,10 +43,10 @@
   &--disabled,
   &:disabled {
     cursor: not-allowed;
-    color: $white;
-    border-color: $main-color;
-    background-color: $main-color !important;
-    opacity: $opacity;
+    color: $dark-gray;
+    border-color: $light-gray;
+    background-color: $light-gray !important;
+    //opacity: $opacity;
 
     @at-root a.btn--disabled {
       pointer-events: none;
@@ -72,9 +72,9 @@
 
     &--disabled,
     &:disabled {
-      color: $main-color;
+      color: $dark-gray;
       background-color: $white !important;
-      border-color: $main-color;
+      border-color: $light-gray;
       cursor: not-allowed;
 
       @at-root a.btn--disabled {

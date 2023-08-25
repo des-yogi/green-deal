@@ -4,9 +4,10 @@
     slidesPerView: 'auto',
     spaceBetween: 40,
     //loop: true,
-    //autoplay: {
-    //  delay: 5000,
-    //},
+    rewind: true,
+    autoplay: {
+      delay: 5000,
+    },
     breakpoints: {
       320: {
         slidesPerView: 'auto',
