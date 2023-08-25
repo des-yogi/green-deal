@@ -39,7 +39,11 @@
     "search-panel-top": [],
     "btn-icon": [],
     "btn-ondark": [],
-    "marked-headings": []
+    "marked-headings": [],
+    "swiper-controls": [],
+    "contact-block": [],
+    "contact-form": [],
+    "founders-block": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

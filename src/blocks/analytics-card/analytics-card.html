@@ -1,14 +1,40 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/analytics-card/analytics-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="analytics-card">content</div>
-
+@ @include('blocks/analytics-card/analytics-card.html', {
+  "title": 'Державне фінансу-вання проектів Green Deal Ukraine',
+  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.'
+})
 -->
+
+<article class="analytics-card">
+  <div class="row  analytics-card__inner-row">
+
+    <div class="analytics-card__img-col">
+      <a href="#" class="embed-responsive embed-responsive--2-3  analytics-card__img" tabindex="-1">
+        <picture>
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">
+
+          <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="885" height="1326" loading="lazy">
+        </picture>
+      </a>
+      <a href="#" class="download-link" download>
+        <span>Завантажити <span class="visually-hidden">документ</span></span>
+        <svg width="19" height="19" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+      </a>
+    </div>
+
+    <div class="analytics-card__text-col">
+      <div class="analytics-card__text">
+        <div class="tag__wrapper">
+          <span class="tag">Project</span>
+          <span class="tag">Industry</span>
+          <time class="publishedon" datetime="2011-01-12">3/08/2023</time>
+        </div>
+        <h2 class="h4  analytics-card__title"><a href="#" tabindex="-1">@@title</a></h2>
+        <p class="analytics-card__intro">@@text</p>
+        <a href="#" class="read-more">Читати більше</a>
+      </div>
+    </div>
+
+  </div>
+</article>

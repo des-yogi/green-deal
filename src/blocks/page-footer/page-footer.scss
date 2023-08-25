@@ -1,8 +1,65 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    padding-top: 32px;
+    padding-bottom: 56px;
+
+    @media (max-width: $screen-xl) and (max-width: $screen-md - 1) {
+      gap: 56px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-bottom: 100px;
+    }
+  }
+
+  &__left-col {
+    @include col(xs, 12);
+    @include col(md, 7, $grid-columns, 32px);
+    @include col(xl, 8, $grid-columns, 40px);
+  }
+
+  &__right-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 4, $grid-columns, 32px);
+    @include col-offset(xl, 1);
+    @include col(xl, 3, $grid-columns, 40px);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__logo-col {
+    @include col(xs, 12);
+    @include col(xl, 4, $grid-columns, 40px);
+    margin-bottom: 24px;
+  }
+
+  &__contacts-col {
+    @include col(xs, 12);
+    @include col(xl, 8, $grid-columns, 40px);
+  }
+
+  .founders-block {
+
+    @media (min-width: $screen-md) {
+      transform: translateY(103px);
+    }
+
+    @media (min-width: $screen-xl) {
+      transform: translateY(32px);
+    }
+  }
+
+  .contact-block {
+
+    @media (min-width: $screen-xl) {
+      transform: translateY(22px);
+    }
+  }
 }

@@ -1,9 +1,98 @@
-// В этом файле должны быть стили для БЭМ-блока social-links, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .social-links {
+  transform: translateX(-8px);
 
   $block-name:                &; // #{$block-name}__element
 
+  &__item {
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 0 8px 8px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__icon {
+        color: $secondary-color;
+        background-color: $white;
+
+        &--fb {
+          border: 1px solid $secondary-color;
+        }
+      }
+    }
+
+    &:active {
+      text-decoration: none;
+
+      #{$block-name}__icon {
+        color: $white;
+        background-color: $main-color;
+        border-color: $main-color;
+
+        &--fb {
+          border: none;
+        }
+      }
+
+      #{$block-name}__caption {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: $white;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    border: 1px solid $secondary-color;
+    transition: all $transition-time;
+
+    svg {
+      fill: currentColor;
+      transition: fill $transition-time;
+    }
+
+    &--fb {
+      position: relative;
+      border: none;
+
+      svg {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 13px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__caption {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    line-height: 1;
+    color: $text-color;
+    text-decoration: none !important;
+  }
+
+  &--footer {
+
+    // @media (min-width: $screen-xs) and (max-width: $screen-xl) {
+    //   margin-bottom: 24px;
+    // }
+  }
 }

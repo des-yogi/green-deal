@@ -1,14 +1,15 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/partners-slider/partners-slider.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="partners-slider">content</div>
-
+@ @include('blocks/partners-slider/partners-slider.html', {
+  "img": "partner-1",
+})
 -->
+
+<div class="swiper-slide  partners-slider__slide">
+  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">
+    <picture>
+      <source srcset="img/@@img.webp" type="image/webp">
+      <img src="img/@@img.png" width="295" height="119" alt="Text" loading="lazy">
+    </picture>
+    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  </a>
+</div>

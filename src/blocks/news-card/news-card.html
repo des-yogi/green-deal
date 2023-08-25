@@ -1,14 +1,31 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/news-card/news-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="news-card">content</div>
-
+@ @include('blocks/news-card/news-card.html', {
+  "addClass": "swiper-slide ",
+  "title": 'Нова публікація: Моделі відстеження для рідкого палива',
+  "text": 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatu…'
+})
 -->
+
+<article class="@@addClass news-card">
+  <a href="#" class="embed-responsive  embed-responsive--3-2  news-card__img" tabindex="-1">
+    <picture>
+      <source srcset="https://placehold.co/800x535/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">
+      <source srcset="https://placehold.co/800x535/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">
+
+      <img src="https://placehold.co/800x535/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="800" height="535" loading="lazy">
+    </picture>
+  </a>
+
+  <div class="news-card__text">
+    <div class="tag__wrapper">
+      <span class="tag">Project</span>
+      <span class="tag">Industry</span>
+    </div>
+    <p>
+      <time class="publishedon" datetime="2011-01-12">3/08/2023</time>
+    </p>
+    <h2 class="h4  news-card__title"><a href="#" tabindex="-1">@@title</a></h2>
+    <p class="news-card__descr">@@text</p>
+    <a href="#" class="read-more">Дізнатись більше</a>
+  </div>
+</article>

@@ -1,9 +1,34 @@
-// В этом файле должны быть стили для БЭМ-блока contact-inset, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .contact-inset {
+  padding-top: 40px;
+  padding-bottom: 110px;
+  color: $white;
+  background-color: $main-color;
+  background-position: bottom -15px right;
+  background-repeat: no-repeat;
+  background-size: 350px 104px;
+  background-image: svg-load('../blocks/contact-inset/bg-img/pattern.svg');
+
+  @media (min-width: $screen-md) {
+    padding-top: 56px;
+    padding-bottom: 220px;
+    background-size: 674px 200px;
+    background-position: bottom -28px right;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    text-transform: none;
+    line-height: 1.3;
+  }
 }

@@ -1,0 +1,26 @@
+.founders-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: none;
+  }
+
+  &__item {
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__link {
+
+    img {
+      display: block;
+    }
+  }
+}

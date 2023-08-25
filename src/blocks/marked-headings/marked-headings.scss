@@ -1,4 +1,5 @@
 .marked-headings {
+  margin-top: 0;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -13,9 +14,13 @@
       width: 16px;
       height: 16px;
       margin-right: 16px;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       background-color: $secondary-color;
       border-radius: 50%;
+
+      @media (min-width: $screen-xl) {
+        transform: translateY(-5px);
+      }
     }
   }
 
@@ -45,17 +50,22 @@
 
       &::after {
         display: inline-block;
-        vertical-align: text-top;
+        vertical-align: baseline;
         content: "";
         width: 41px;
         height: 32px;
         margin-left: 16px;
-        //transform: translateY(2px);
+        transform: translateY(4px);
         background-color: transparent;
         background-size: 41px 32px;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: svg-load('../blocks/sprite-svg/svg/link-right.svg', fill=$secondary-color);
+        background-image: svg-load('../blocks/sprite-svg/svg/link-right.svg',
+          fill=$secondary-color);
+
+        @media (min-width: $screen-xl) {
+          transform: translateY(2px);
+        }
       }
     }
   }

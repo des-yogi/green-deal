@@ -23,7 +23,8 @@
 
     &:hover,
     &:focus {
-      color: $main-color;
+      //color: $main-color;
+      text-decoration: underline;
     }
 
     &::after {

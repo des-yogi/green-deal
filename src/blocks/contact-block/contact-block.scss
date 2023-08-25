@@ -1,0 +1,75 @@
+.contact-block {
+  transform: translateX(-8px);
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 8px 0 8px 8px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__icon {
+        color: $white;
+        background-color: $secondary-color;
+      }
+    }
+
+    &:active {
+      text-decoration: none;
+
+      #{$block-name}__icon {
+        color: $white;
+        background-color: $main-color;
+        border-color: $main-color;
+      }
+
+      #{$block-name}__caption {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__icon {
+    flex: 0 0;
+    flex-basis: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: $secondary-color;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $secondary-color;
+    transition: all $transition-time;
+
+    svg {
+      fill: currentColor;
+      transition: fill $transition-time;
+    }
+  }
+
+  &__caption {
+    padding-top: 4px;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $text-color;
+    text-decoration: none !important;
+  }
+
+  &--footer {
+  }
+}
