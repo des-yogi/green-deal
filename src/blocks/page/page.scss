@@ -34,6 +34,18 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__title {
+    margin-bottom: 56px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 100px;
+    }
+  }
 }
 
 *,

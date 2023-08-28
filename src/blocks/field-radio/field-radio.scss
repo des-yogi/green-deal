@@ -3,13 +3,13 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   &__title {
     display: block;
     margin-bottom: 16px;
     line-height: $line-height;
-    font-weight: 500;
+    font-weight: 600;
     color: $title-color;
   }
 
@@ -34,7 +34,7 @@
   &__name {
     position: relative;
     display: inline-block;
-    padding-left: 32px;
+    padding-left: 40px;
     //margin-right: 0.6em;
     font-weight: 400;
     line-height: $line-height;
@@ -42,8 +42,17 @@
 
     &:hover {
 
-      #{$block-name}__name-text {
-        color: $link-color--hover;
+      #{$block-name}__name-text::before {
+        background-color: $checkbox--hover;
+        border-color: $checkbox--hover;
+      }
+    }
+
+    &:active {
+
+      #{$block-name}__name-text::before {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
       }
     }
   }
@@ -56,10 +65,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid $border-color;
+      width: 24px;
+      height: 24px;
+      background-color: $white;
+      border: 2px solid $secondary-color;
       border-radius: 50%;
+      transition: all $transition-time;
+
+      @at-root input:checked ~ & {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+      }
     }
 
     @at-root input:focus ~ &::before {
@@ -69,13 +85,13 @@
     &::after {
       content: '';
       position: absolute;
-      top: 5px;
-      left: 5px;
-      width: 12px;
-      height: 12px;
+      top: 7px;
+      left: 7px;
+      width: 10px;
+      height: 10px;
       opacity: 0;
       border-radius: 50%;
-      background-color: $border-color;
+      background-color: $white;
       transition: opacity $transition-time;
 
       @at-root input:checked ~ & {
@@ -102,7 +118,7 @@
   }
 
   &__help-text-wrap {
-    padding-left: 1.5em;
+    padding-left: 40px;
   }
 
   &__help-text {

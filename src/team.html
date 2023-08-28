@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Команда</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/top-decor/top-decor.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  main-content  team-page">
+
+          <div class="team-page__headings">
+            <h1 class="team-page__title">Команда</h1>
+            <p class="h4  team-page__intro">We would like to introduce the team members who make up the driving force behind our initiative. Each team member brings a unique blend of expertise, passion, and dedication that collectively fuels our project's success.</p>
+          </div>
+
+          @@include('blocks/team-card/team-card.html', {
+            "name": "Dr. Susanne Nies",
+            "position": 'Project Lead Green Deal Ukraina at HZB',
+            "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+          })
+
+          @@include('blocks/team-card/team-card.html', {
+            "name": "Dr. Georg Zachmann",
+            "position": 'Project Lead Green Deal Ukraina at HZB',
+            "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+          })
+
+          @@include('blocks/team-card/team-card.html', {
+            "name": "Dr. Frank Meissner",
+            "position": 'Project Lead Green Deal Ukraina at HZB',
+            "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+          })
+
+          @@include('blocks/team-card/team-card.html', {
+            "name": "Olha Bondarenko",
+            "position": 'Project Lead Green Deal Ukraina at HZB',
+            "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+          })
+
+          @@include('blocks/team-card/team-card.html', {
+            "name": "Dr Joanna Maćkowiak-Pandera",
+            "position": 'Project Lead Green Deal Ukraina at HZB',
+            "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+          })
+
+        </div>
+
+        @@include('blocks/contact-inset/contact-inset.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-panel-top/search-panel-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
