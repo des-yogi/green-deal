@@ -1,0 +1,40 @@
+<!--DEV
+@ @include('blocks/team-card/team-card.html', {
+  "name": "Dr. Susanne Nies",
+  "position": 'Project Lead Green Deal Ukraina at HZB',
+  "descr": 'Susanne holds a PhD and a habilitation in Political sciences, Slavistics and Romanistics. She is an expert on international energy and climate policy, with a focus on electricity, EU and Central- and Eastern Europe. Previous roles include Heinrich Boell Foundation, FU Berlin, Ifri, EURELECTRIC, ENTSO-E and Smart Wires. She teaches at TU Berlin and published widely on energy matters.'
+})
+-->
+
+<article class="team-card">
+  <div class="row  team-card__row">
+
+    <div class="team-card__img-col">
+      <div class="embed-responsive embed-responsive--2-3  team-card__img">
+        <picture>
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Фото&font=lora" media="(min-width: 1280px)" type="image/webp">
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Фото&font=lora" media="(min-width: 1280px)">
+            <!-- 266x399, 532x798 2x -->
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Фото&font=lora" media="(min-width: 768px)" type="image/webp">
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Фото&font=lora" media="(min-width: 768px)">
+            <!-- 474x711 -->
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Фото&font=lora" media="(min-width: 360px)" type="image/webp">
+          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Фото&font=lora" media="(min-width: 360px)">
+            <!-- 735x1102 -->
+          <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="@@name" width="885" height="1326" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="team-card__text-col">
+      <div class="team-card__text">
+        <h2 class="team-card__name">@@name</h2>
+        <p class="team-card__position">@@position</p>
+        <p class="team-card__descr">@@descr</p>
+
+        @@include('../../blocks/share-links/share-links.html')
+      </div>
+    </div>
+
+  </div>
+</article>

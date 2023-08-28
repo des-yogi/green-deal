@@ -45,7 +45,15 @@
     "contact-form": [],
     "founders-block": [],
     "top-decor": [],
-    "share-links": []
+    "share-links": [],
+    "about-project": [],
+    "accordion": [],
+    "team-page": [],
+    "team-card": [],
+    "council-page": [],
+    "council-card": [],
+    "partners-page": [],
+    "contact-page": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

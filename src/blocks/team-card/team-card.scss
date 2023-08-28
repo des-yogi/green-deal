@@ -1,0 +1,59 @@
+.team-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .share-links {
+    margin-top: 24px;
+  }
+
+  &__row {
+    gap: 24px 0;
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col(md, 5, $grid-columns, 32px);
+    @include col(xl, 3, $grid-columns, 40px);
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 7, $grid-columns, 32px);
+    @include col(xl, 9, $grid-columns, 40px);
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__position {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__descr {
+    margin: 0;
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}

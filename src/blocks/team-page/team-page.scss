@@ -1,0 +1,12 @@
+.team-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__intro {
+    margin: 0;
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}

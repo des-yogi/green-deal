@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока council-page, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.council-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+}

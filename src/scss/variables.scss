@@ -13,8 +13,8 @@ $gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
 $color-success:               #529a0d;
-$color-danger:                #b05911;
-$color-warning:               #f11818;
+$color-warning:               #b05911;
+$color-danger:                #f11818;
 
 //$color-vk:                    #4a76a8;
 $color-fb:                    #4267b2;
@@ -29,13 +29,15 @@ $color-main:                  $main-color;
 $secondary-color:             #00829b; //#00a0ae
 $add-color:                   #88c152     ;
 
+$checkbox--hover:             #6dc8bf;
+
 $dark-gray:                   #52575b;
 $medium-gray:                 #a2a7ac;
 $light-gray:                  #e9ebec;
 
 $text-color:                  #131313;
 $title-color:                 $text-color;
-$text-muted:                  #52575b;
+$text-muted:                  $dark-gray;
 
 $body-bg:                     #ffffff;
 
@@ -94,8 +96,8 @@ $grid-gutter-width:           16px;
 
 // Разное
 
-$field-padding-vertical:      5px;
-$field-padding-horizontal:    12px;
+$field-padding-vertical:      8px;
+$field-padding-horizontal:    16px;
 
 $border-radius:               2px;
 $border-radius--lg:           8px;
