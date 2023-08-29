@@ -53,7 +53,10 @@
     "council-page": [],
     "council-card": [],
     "partners-page": [],
-    "contact-page": []
+    "contact-page": [],
+    "news-page": [],
+    "countdown": [],
+    "event-details": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

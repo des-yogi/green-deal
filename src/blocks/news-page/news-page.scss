@@ -1,0 +1,105 @@
+.news-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .tag__wrapper {
+    margin-bottom: 24px;
+  }
+
+  .marked-headings {
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    gap: 56px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 72px 0;
+    }
+  }
+
+  &__main-col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 32px);
+    @include col(xl, 8, $grid-columns, 40px);
+  }
+
+  &__sidebar-col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 32px);
+    @include col(xl, 4, $grid-columns, 40px);
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__time {
+    margin-bottom: 24px;
+  }
+
+  &__lead,
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__lead {
+    font-size: $font-size-lg;
+    font-weight: 600;
+  }
+
+  &__img {
+    margin: 40px 0;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__sidebar {
+    //height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 2px solid $secondary-color;
+    border-radius: $border-radius-lg;
+
+    @media (min-width: $screen-xl) {
+      //position: sticky;
+      //top: 108px + 40px;
+      padding: 40px;
+    }
+  }
+
+  &__sidebar-inner-row {
+    gap: 40px 0;
+  }
+
+  &__sidebar-inner-col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(md, 1);
+    @include col(md, 10, $grid-columns, 32px);
+    @include col-offset(xl, 0);
+    @include col(xl, 12, $grid-columns, 40px);
+  }
+
+  &__sidebar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 0;
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+      justify-content: space-between;
+      gap: 40px 32px;
+    }
+
+    .news-card {
+      flex: 1 1 100%;
+
+      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+        flex-basis: calc(50% - 16px);
+      }
+    }
+  }
+}

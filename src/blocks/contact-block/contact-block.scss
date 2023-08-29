@@ -39,6 +39,15 @@
         color: $main-color;
       }
     }
+
+    &--hzb {
+      align-items: center;
+
+      #{$block-name}__caption {
+        padding-top: 0;
+        color: $main-color;
+      }
+    }
   }
 
   &__icon {

@@ -1,0 +1,36 @@
+.event-details {
+  position: sticky;
+  top: 108px + 12px;
+  padding: 40px 24px;
+  color: $white;
+  background-color: $main-color;
+  border-radius: $border-radius-lg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .countdown {
+    color: $white;
+  }
+
+  &__row {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-family: $font-family;
+    font-size: $font-size-lg;
+    text-transform: none;
+  }
+
+  &__value {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__info {
+    margin-bottom: 40px;
+    font-size: $font-size-lg;
+  }
+}
