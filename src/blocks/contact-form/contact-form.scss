@@ -1,9 +1,54 @@
-// В этом файле должны быть стили для БЭМ-блока contact-form, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .contact-form {
 
   $block-name:                &; // #{$block-name}__element
 
+  .field-actions__agreement {
+
+    .field-checkbox__name-text {
+      color: inherit;
+    }
+  }
+
+  .field-text--textarea {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    .field-text__input {
+      height: 120px !important;
+    }
+  }
+
+
+  &__inner {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0 24px;
+    }
+
+    // @media (min-width: $screen-xl) {
+    //   gap: 0 24px;
+    // }
+  }
+
+  &__col-left,
+  &__col-right {
+
+    @media (min-width: $screen-md) {
+      flex: 1 1;
+      flex-basis: calc(50% - 16px);
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+
+  &__col-full {
+    flex: 1 1 100%;
+  }
 }

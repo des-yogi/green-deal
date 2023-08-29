@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/top-decor/top-decor.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="main-content  contact-page">
+
+          <div class="container">
+            <h1 class="page__title">Контакти</h1>
+          </div>
+
+          <div class="container  contact-page__container">
+            <div class="contact-page__row">
+
+              <div class="contact-page__address-col">
+                <div class="contact-page__address">
+                  <section class="contact-block  contact-block--footer">
+                    <h2 class="visually-hidden">Блок контактної інформації</h2>
+
+                    <ul class="list-nostyled  contact-block__list">
+                      <li class="contact-block__item">
+                        <a href="mailto:greendealukraina@helmholtz-berlin.de" class="contact-block__link">
+                          <span class="contact-block__icon">
+                            <svg width="20" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#mail"></use></svg>
+                          </span>
+                          <span class="contact-block__caption">greendealukraina@helmholtz-berlin.de</span>
+                        </a>
+                      </li>
+
+                      <li class="contact-block__item">
+                        <span class="contact-block__link">
+                          <span class="contact-block__icon">
+                            <svg width="19" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#pin"></use></svg>
+                          </span>
+                          <span class="contact-block__caption">Helmholtz-Zentrum Berlin für Materialien und Energie <br>Albert-Einstein-Str. 16, 12489 Berlin</span>
+                        </span>
+                      </li>
+
+                      <li class="contact-block__item">
+                        <a href="tel:+4930806215625" class="contact-block__link">
+                          <span class="contact-block__icon">
+                            <svg width="21" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#phone"></use></svg>
+                          </span>
+                          <span class="contact-block__caption">+49 30 8062 – 15625</span>
+                        </a>
+                      </li>
+
+                      <li class="contact-block__item">
+                        <a href="#" class="contact-block__link  contact-block__link--hzb">
+                          <svg width="38" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#hzb-mini-logo"></use></svg>
+                          <span class="contact-block__caption">www.helmholtz-berlin.de</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </section>
+                </div>
+              </div>
+
+              <div class="contact-page__form-col">
+                <div class="contact-page__form-bg">
+                  @@include('blocks/contact-form/contact-form.html')
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        @@include('blocks/contact-inset/contact-inset.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-panel-top/search-panel-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

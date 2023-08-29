@@ -17,6 +17,20 @@
     }
   }
 
+  &.h3 {
+
+    #{$block-name}__text {
+
+      &::after {
+        transform: translateY(5px);
+
+        @media (min-width: $screen-xl) {
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+
   &__text {
     display: inline-block;
     vertical-align: baseline;

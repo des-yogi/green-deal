@@ -1,0 +1,88 @@
+.countdown {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  color: $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 360px;
+    gap: 0 24px;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__number {
+    flex: 1 1;
+    flex-basis: calc(100% / 3 - 48px / 3);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    letter-spacing: 2px;
+    //align-items: center;
+    //flex-direction: column;
+
+    &::after {
+      display: block;
+      //vertical-align: baseline;
+      content: attr(data-divider);
+
+      position: absolute;
+      top: -3px;
+      right: -19px;
+      font-family: $font-family--headings;
+      font-size: 30px;
+      line-height: 36px;
+
+      @media (min-width: $screen-md) {
+        top: 3px;
+      }
+    }
+
+    span {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__time {
+    height: 36px;
+    font-family: $font-family--headings;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: $main-color;
+    background-color: $white;
+    border-radius: 36px;
+
+    @media (min-width: $screen-md) {
+      height: 48px;
+      font-size: 30px;
+      line-height: 48px;
+    }
+  }
+
+  &__text {
+    margin-top: 8px;
+    font-size: $font-size-lg;
+    font-weight: 600;
+  }
+
+  &__deadline-message {
+    display: none;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $color-danger;
+
+    &.visible {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+  }
+}

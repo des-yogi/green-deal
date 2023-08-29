@@ -1,14 +1,56 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/contact-form/contact-form.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="contact-form">content</div>
-
 -->
+
+<form class="contact-form" action="#" method="post">
+  <div class="contact-form__inner">
+
+    <div class="contact-form__col-left">
+      <label class="field-text">
+        <!-- <span class="field-text__name">Текст</span> -->
+        <span class="field-text__input-wrap">
+          <input class="field-text__input" type="text" name="name" value="" placeholder="Ваше ім'я">
+          <!-- <span class="field-text__help-text" data-error="">Ошибка</span> -->
+        </span>
+      </label>
+      <label class="field-text">
+        <!-- <span class="field-text__name">Текст</span> -->
+        <span class="field-text__input-wrap">
+          <input class="field-text__input" type="email" name="email" value="" placeholder="Ваш Email">
+          <!-- <span class="field-text__help-text" data-error=""></span> -->
+        </span>
+      </label>
+    </div>
+
+    <div class="contact-form__col-right">
+      <label class="field-text  field-text--textarea">
+        <!-- <span class="field-text__name">Текст</span> -->
+        <span class="field-text__input-wrap">
+          <textarea class="field-text__input" name="message" placeholder="Залиште повідомлення"></textarea>
+          <!-- <span class="field-text__help-text" data-error=""></span> -->
+        </span>
+      </label>
+    </div>
+
+    <div class="contact-form__col-full">
+      <div style="margin-bottom: 24px;">
+        <img src="img/recaptcha.gif" alt="" width="295">
+      </div>
+
+      <div class="field-actions  field-actions__agreement">
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+            <span class="field-checkbox__name-text">
+              Даю згоду на обробку персональних даних
+            </span>
+          </label>
+        </div>
+        <div>
+          <button class="btn-ondark" type="submit">Відправити</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</form>

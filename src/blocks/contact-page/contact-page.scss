@@ -1,9 +1,59 @@
-// В этом файле должны быть стили для БЭМ-блока contact-page, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .contact-page {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__container {
+
+    @media (min-width: $screen-xl) {
+      background: linear-gradient(to right, $white, $white 50%, $main-color 50%) no-repeat 100%;
+    }
+  }
+
+  &__row {
+    @include row(
+      $xs-grid-gutter:  32px,
+      $sm-grid-gutter:  32px,
+      $md-grid-gutter:  96px,
+      $lg-grid-gutter:  96px,
+      $xl-grid-gutter:  40px,
+      $xxl-grid-gutter: 40px
+    );
+    gap: 56px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 72px 0;
+    }
+  }
+
+  &__address-col {
+    @include col(xs, 12, $grid-columns, 32px);
+    @include col(md, 12, $grid-columns, 96px);
+    @include col(xl, 4, $grid-columns, 40px);
+  }
+
+  &__form-col {
+    @include col(xs, 12, $grid-columns, 0);
+    @include col(md, 12, $grid-columns, 0);
+    @include col(xl, 8, $grid-columns, 40px);
+  }
+
+  &__address {
+
+  }
+
+  &__form-bg {
+    height: 100%;
+    padding: 40px 16px;
+    color: $white;
+    background-color: $main-color;
+
+    @media (min-width: $screen-md) {
+      padding: 56px 48px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 0;
+      padding-left: 70px;
+    }
+  }
 }
