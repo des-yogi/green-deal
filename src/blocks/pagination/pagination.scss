@@ -26,16 +26,6 @@
   &__item {
     margin: 0 12px;
 
-    &:first-child {
-      margin-right: auto;
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-left: auto;
-      margin-right: 0;
-    }
-
     &.active {
 
       a > span {
@@ -59,7 +49,8 @@
     }
 
     &--prev {
-      //margin-right: 20px;
+      margin-right: auto;
+      margin-left: 0;
 
       #{$block-name}__link {
         transform: scale(-1, 1);
@@ -77,7 +68,8 @@
     }
 
     &--next {
-      //margin-left: 20px;
+      margin-left: auto;
+      margin-right: 0;
 
       #{$block-name}__link {
         background-image: svg-load('../blocks/sprite-svg/svg/link-right.svg', fill=$secondary-color);
