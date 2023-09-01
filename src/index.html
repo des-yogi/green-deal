@@ -135,7 +135,23 @@
 
             </div>
 
-            <button class="download-link  download-link--read-more">
+            <div id="showMore" class="collapse row analytics-card__row">
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів Green Deal Ukraine',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.'
+                })
+              </div>
+
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування.'
+                })
+              </div>
+            </div>
+
+            <button class="download-link  download-link--read-more  analytics-card__show-more" data-bs-toggle="collapse" data-bs-target="#showMore" aria-expanded="false" aria-controls="showMore">
               <span>Показати більше</span>
               <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-down-big"></use></svg>
             </button>
