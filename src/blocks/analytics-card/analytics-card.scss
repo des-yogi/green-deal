@@ -2,9 +2,13 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  // &__row {
-  //   gap: 40px 0;
-  // }
+  &__row {
+    gap: 40px 0;
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
 
   &__page-row {
     gap: 40px 0;
@@ -31,13 +35,13 @@
   &__img-col {
     @include col(xs, 12);
     @include col(md, 5, $grid-columns, 32px);
-    @include col(xl, 6, $grid-columns, 24px);
+    @include col(xl, 6, $grid-columns, 40px);
   }
 
   &__text-col {
     @include col(xs, 12);
     @include col(md, 7, $grid-columns, 32px);
-    @include col(xl, 6, $grid-columns, 24px);
+    @include col(xl, 6, $grid-columns, 40px);
 
     @media (min-width: $screen-md) {
       display: flex;
@@ -94,5 +98,16 @@
   &__intro {
     margin-top: 24px;
     margin-bottom: 40px;
+  }
+
+  &__show-more {
+
+    &[aria-expanded=true] {
+      cursor: not-allowed;
+      color: $dark-gray;
+      border-color: $light-gray;
+      background-color: $light-gray !important;
+      pointer-events: none;
+    }
   }
 }

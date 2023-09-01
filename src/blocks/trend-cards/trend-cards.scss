@@ -6,11 +6,11 @@
   &__wrapper {
 
     .marked-headings {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
 
-      @media (min-width: $screen-xl) {
-        margin-bottom: 32px;
-      }
+      // @media (min-width: $screen-xl) {
+      //   margin-bottom: 32px;
+      // }
     }
 
     & > .row {
