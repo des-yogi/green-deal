@@ -57,7 +57,8 @@
     "news-page": [],
     "countdown": [],
     "event-details": [],
-    "page-404": []
+    "page-404": [],
+    "gd-events": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

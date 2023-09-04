@@ -1,0 +1,75 @@
+.gd-events {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+
+    & + & {
+      margin-top: 56px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 72px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  &__event {
+
+  }
+
+  &__event-title {
+    margin-top: 24px;
+  }
+
+  &__event-link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__event-descr {
+
+  }
+
+  &__event-location {
+    margin-top: 24px;
+  }
+
+  &__calendar {
+    padding: 40px 24px;
+    color: $white;
+    background-color: $main-color;
+    border-radius: $border-radius-lg;
+
+    @media (min-width: $screen-xl) {
+      position: sticky;
+      top: 108px + 16px;
+    }
+  }
+
+  &__calendar-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__calendar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
