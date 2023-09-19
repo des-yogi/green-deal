@@ -1,12 +1,12 @@
 // Этот блок ответственен ТОЛЬКО за типографику проекта.
 
-/* unbounded-500 - cyrillic_latin */
+/* mulish-800 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Unbounded';
+  font-family: 'Mulish';
   font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/unbounded-v6-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 800;
+  src: url('../fonts/mulish-v13-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* nunito-regular - cyrillic_latin */
@@ -113,7 +113,7 @@ h1 {
   font-size: $font-size--h1;
 
   @media (min-width: $screen-xl) {
-    font-size: $font-size--h1 * 1.5;
+    font-size: $font-size--h1 * 1.25;
   }
 }
 
@@ -122,7 +122,7 @@ h2 {
   font-size: $font-size--h2;
 
   @media (min-width: $screen-xl) {
-    font-size: $font-size--h2 * 1.2857;
+    font-size: $font-size--h2 * 1.1429;
   }
 }
 
@@ -131,7 +131,7 @@ h3 {
   font-size: $font-size--h3;
 
   @media (min-width: $screen-xl) {
-    font-size: $font-size--h3 * 1.25;
+    font-size: $font-size--h3 * 1.0833;
   }
 }
 
