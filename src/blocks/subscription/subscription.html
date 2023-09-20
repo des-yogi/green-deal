@@ -1,0 +1,39 @@
+<!--DEV
+@ @include('blocks/subscription/subscription.html')
+-->
+
+<section class="container  subscription">
+  <h3 class="visually-hidden">Newsletter subscription form</h3>
+  <p class="h3  subscription__subtitle">Підпишіться на нашу розсилку</p>
+  <p class="h4  subscription__title">Щоб бути в курсі регулярних оновлень</p>
+
+  <form id="subscription" class="subscription__form" action="" method="post">
+    <label class="field-text">
+      <span class="field-text__input-wrap">
+        <input class="field-text__input" type="text" name="name" value="" placeholder="Ваше ім'я">
+        <!-- <span class="field-text__help-text" data-error="">Ошибка</span> -->
+      </span>
+    </label>
+    <label class="field-text">
+      <span class="field-text__input-wrap">
+        <input class="field-text__input" type="email" name="email" value="" placeholder="Ваш Email">
+        <!-- <span class="field-text__help-text" data-error=""></span> -->
+      </span>
+    </label>
+
+    <div class="field-actions  field-actions__agreement">
+      <div class="field-checkbox" style="margin:32px 0;">
+        <label class="field-checkbox__name">
+          <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+          <span class="field-checkbox__name-text" style="color:#ffffff;">
+            Даю згоду на обробку персональних даних
+          </span>
+        </label>
+      </div>
+      <div>
+        <button class="btn-ondark" type="submit"><span>Підписатись</span></button>
+      </div>
+    </div>
+
+  </form>
+</section>

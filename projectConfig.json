@@ -58,7 +58,8 @@
     "countdown": [],
     "event-details": [],
     "page-404": [],
-    "gd-events": []
+    "gd-events": [],
+    "subscription": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
