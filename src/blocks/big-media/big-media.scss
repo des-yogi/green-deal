@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока big-media, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.big-media {
+
+  $block-name:                &; // #{$block-name}__element
+
+}

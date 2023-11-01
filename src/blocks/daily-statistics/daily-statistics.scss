@@ -1,0 +1,32 @@
+.daily-statistics {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    gap: 32px 0;
+
+    @media (min-width: $screen-xl) {
+      gap: 40px 0;
+    }
+  }
+
+  &__item {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 3, $grid-columns, 40px);
+  }
+
+  &__title {
+    margin: 16px 0 0;
+    text-align: center;
+  }
+
+  &__img {
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 (function(){
-  const news = new Swiper('.news-slider__container', {
+  const speakers = new Swiper('.speakers-slider__container', {
     speed: 400,
     spaceBetween: 40,
      breakpoints: {
@@ -9,10 +9,14 @@
       },
       768: {
         slidesPerView: 2,
+        grid: {
+          fill: 'row',
+          rows: 2,
+        },
         spaceBetween: 32
       },
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 40
       }
     },

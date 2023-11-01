@@ -1,0 +1,59 @@
+.speakers-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .swiper-slide {
+    box-sizing: border-box;
+  }
+
+  .swiper-controls {
+    margin-top: 40px;
+  }
+
+  .swiper-wrapper {
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+      gap: 32px 0;
+    }
+  }
+
+  &__container {
+
+  }
+
+  &__slide {
+
+  }
+
+  &__speaker {
+
+  }
+
+  &__photo {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__speaker-name {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__add-info {
+
+  }
+}

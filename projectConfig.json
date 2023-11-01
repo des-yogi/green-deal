@@ -59,7 +59,12 @@
     "event-details": [],
     "page-404": [],
     "gd-events": [],
-    "subscription": []
+    "subscription": [],
+    "daily-statistics": [],
+    "speakers-slider": [],
+    "big-media": [],
+    "media-card": [],
+    "photo-gallery": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
