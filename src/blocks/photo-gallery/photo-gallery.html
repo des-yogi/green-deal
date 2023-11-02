@@ -1,14 +1,130 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/photo-gallery/photo-gallery.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="photo-gallery">content</div>
-
 -->
+
+<section class="photo-gallery">
+
+  @@include('../../blocks/marked-headings/marked-headings.html', {
+    "tag": "h2",
+    "tagInner": "span",
+    "href": "",
+    "text": "photos",
+    "addClass": ""
+  })
+
+  <div class="row  photo-gallery__inner">
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 1280px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 1280px)">
+            <!-- 368x245 -->
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 992px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 992px)">
+            <!-- 576x384 -->
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 768px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 768px)">
+            <!-- 432x288 -->
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 480px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 480px)">
+            <!-- 735x490 -->
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
+            <!-- 448x299 -->
+          <img src="img/gallery-item-1.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-2.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-3.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-1.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-2.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-3.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-1.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-2.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+    <div class="photo-gallery__col">
+      <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
+        <picture>
+          <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
+
+          <img src="img/gallery-item-3.jpg" alt="" width="1629" height="1085" loading="lazy">
+        </picture>
+      </a>
+    </div>
+
+  </div>
+
+</section>

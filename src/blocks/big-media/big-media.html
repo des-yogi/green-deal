@@ -1,14 +1,20 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/big-media/big-media.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="big-media">content</div>
-
 -->
+
+<section class="big-media">
+  <div class="big-media__inner">
+
+    <div class="big-media__text-wrapper">
+      <h2 class="visually-hidden">Видеоотчет с прошедшего события</h2>
+      <p class="h3  big-media__title">Missed the broadcast?</p>
+      <div class="h4  big-media__text">
+        <p>The event will be broadcast live on the YouTube platform.</p>
+        <p>Follow the link!</p>
+      </div>
+    </div>
+
+    @@include('../../blocks/lazy-video/lazy-video.html')
+
+  </div>
+</section>
