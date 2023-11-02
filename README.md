@@ -5,6 +5,7 @@
 * https://des-yogi.github.io/green-deal/news-page
 * https://des-yogi.github.io/green-deal/events
 * https://des-yogi.github.io/green-deal/event-page
+* https://des-yogi.github.io/green-deal/past-event
 * https://des-yogi.github.io/green-deal/analytical-reports
 * https://des-yogi.github.io/green-deal/analytical-report-1
 * https://des-yogi.github.io/green-deal/about-project
