@@ -132,6 +132,182 @@
 
           @@include('blocks/speakers-slider/speakers-slider.html')
 
+          <section class="partners-slider">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "Sponsors",
+              "addClass": ""
+            })
+
+            <div class="swiper  partners-slider__container">
+              <div class="swiper-wrapper">
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-1"
+                })
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-2"
+                })
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-3"
+                })
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-4"
+                })
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-5"
+                })
+
+                @@include('blocks/partners-slider/partners-slider.html', {
+                  "img": "partner-6"
+                })
+
+              </div>
+            </div>
+
+          </section>
+
+          @@include('blocks/big-media/big-media.html')
+
+          <section class="media-card">
+
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "MEDIA",
+              "addClass": ""
+            })
+
+            <div class="row  media-card__inner">
+
+              <div class="media-card__col">
+                <figure class="media-card__fig">
+                  <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
+                    <picture>
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">
+                        <!-- 426x240 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
+                        <!-- 576x324 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
+                        <!-- 735x413 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
+                        <!-- 448x252 -->
+                      <img src="img/video-placeholder.jpg" alt="Alt text" width="" height="" loading="lazy">
+                    </picture>
+                    <span class="lazy-video__btn" aria-hidden="true"></span>
+                  </a>
+                  <figcaption class="media-card__caption">Ukraine towards the EU: conference video</figcaption>
+                </figure>
+              </div>
+
+              <div class="media-card__col">
+                <figure class="media-card__fig">
+                  <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
+                    <picture>
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">
+                        <!-- 426x240 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
+                        <!-- 576x324 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
+                        <!-- 735x413 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
+                        <!-- 448x252 -->
+                      <img src="img/video-placeholder.jpg" alt="Alt text" width="" height="" loading="lazy">
+                    </picture>
+                    <span class="lazy-video__btn" aria-hidden="true"></span>
+                  </a>
+                  <figcaption class="media-card__caption">Ukraine towards the EU: conference presentation part 1</figcaption>
+                </figure>
+              </div>
+
+              <div class="media-card__col">
+                <figure class="media-card__fig">
+                  <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
+                    <picture>
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">
+                        <!-- 426x240 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
+                        <!-- 576x324 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
+                        <!-- 735x413 -->
+                      <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
+                      <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
+                        <!-- 448x252 -->
+                      <img src="img/video-placeholder.jpg" alt="Alt text" width="" height="" loading="lazy">
+                    </picture>
+                    <span class="lazy-video__btn" aria-hidden="true"></span>
+                  </a>
+                  <figcaption class="media-card__caption">Ukraine towards the EU: conference presentation part 2</figcaption>
+                </figure>
+              </div>
+
+            </div>
+
+          </section>
+
+          @@include('blocks/photo-gallery/photo-gallery.html')
+
+          <section class="analytics-card__wrapper">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "span",
+              "href": "",
+              "text": "presentation",
+              "addClass": ""
+            })
+
+            <div class="row  analytics-card__row">
+
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів Green Deal Ukraine',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.'
+                })
+              </div>
+
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування.'
+                })
+              </div>
+
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів Green Deal Ukraine',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.'
+                })
+              </div>
+
+              <div class="analytics-card__col">
+                @@include('blocks/analytics-card/analytics-card.html', {
+                  "title": 'Державне фінансування проектів',
+                  "text": 'Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування.'
+                })
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
 
         @@include('blocks/contact-inset/contact-inset.html')

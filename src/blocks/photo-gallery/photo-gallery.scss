@@ -1,9 +1,26 @@
-// В этом файле должны быть стили для БЭМ-блока photo-gallery, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .photo-gallery {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__inner {
+    gap: 32px 0;
+
+    @media (min-width: $screen-xl) {
+      gap: 40px 0;
+    }
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 4, $grid-columns, 40px);
+  }
+
+  &__item {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }

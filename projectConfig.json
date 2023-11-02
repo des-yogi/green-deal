@@ -64,7 +64,8 @@
     "speakers-slider": [],
     "big-media": [],
     "media-card": [],
-    "photo-gallery": []
+    "photo-gallery": [],
+    "lazy-video": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

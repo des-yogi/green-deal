@@ -1,9 +1,28 @@
-// В этом файле должны быть стили для БЭМ-блока media-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .media-card {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 4, $grid-columns, 40px);
+  }
+
+  &__inner {
+    gap: 32px 0;
+
+    @media (min-width: $screen-xl) {
+      gap: 40px 0;
+    }
+  }
+
+  &__fig {
+    margin: 0;
+  }
+
+  &__caption {
+    margin-top: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
 }

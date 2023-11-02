@@ -1,9 +1,58 @@
-// В этом файле должны быть стили для БЭМ-блока big-media, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .big-media {
 
   $block-name:                &; // #{$block-name}__element
 
+  .lazy-video {
+
+    @media (min-width: $screen-md) {
+      flex: 1 0 45%;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex: 1 0 40%;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex: 1 0 33%;
+    }
+  }
+
+  &__inner {
+    color: $white;
+    background-color: $secondary-color;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text-wrapper {
+    padding: 32px 16px;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 56px 72px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin: 0;
+  }
 }

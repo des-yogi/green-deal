@@ -1,0 +1,22 @@
+<!--DEV
+@ @include('blocks/lazy-video/lazy-video.html')
+-->
+
+<a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
+  <picture>
+    <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">
+      <!-- 426x240 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
+      <!-- 576x324 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
+      <!-- 735x413 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
+      <!-- 448x252 -->
+    <img src="img/video-placeholder.jpg" alt="Alt text" width="" height="" loading="lazy">
+  </picture>
+  <span class="lazy-video__btn" aria-hidden="true"></span>
+</a>

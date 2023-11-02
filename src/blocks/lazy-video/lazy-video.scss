@@ -1,0 +1,37 @@
+.lazy-video {
+  position: relative;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover,
+  &:focus {
+
+    #{$block-name}__btn {
+      background-color: $play-link--hover;
+      background-image: svg-load('../blocks/lazy-video/bg-img/play.svg', fill=$text-color);
+    }
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__btn {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: $secondary-color;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 55% 50%;
+    background-image: svg-load('../blocks/lazy-video/bg-img/play.svg', fill=$white);
+    border-radius: 50%;
+    transition: all $transition-time ease;
+  }
+}
