@@ -68,32 +68,38 @@
             <div class="news-page__sidebar-col">
               <aside class="event-details">
                 <h2 class="visually-hidden">Детальна інформація про подію</h2>
-                <div class="event-details__inner">
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Дата:</h3>
-                    <div class="event-details__value"><time datetime="2011-01-12">17.08.2023</time></div>
+                  <section class="daily-statistics">
+                    <h2 class="h3  daily-statistics__title">This day in numbers</h2>
+                    <ul class="list-nostyled  row  daily-statistics__list">
+                      <li class="daily-statistics__item">
+                        <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">
+                          <img src="img/day-stat-1.svg" alt width="102" height="100" loading="lazy">
+                        </div>
+                        <p class="h5  daily-statistics__title">10 000+ online participants</p>
+                      </li>
+                      <li class="daily-statistics__item">
+                        <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">
+                          <img src="img/day-stat-2.svg" alt width="102" height="100" loading="lazy">
+                        </div>
+                        <p class="h5  daily-statistics__title">30+ most prominent speakers</p>
+                      </li>
+                      <li class="daily-statistics__item">
+                        <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">
+                          <img src="img/day-stat-3.svg" alt width="102" height="100" loading="lazy">
+                        </div>
+                        <p class="h5  daily-statistics__title">4 sessions and 8 hours discussions</p>
+                      </li>
+                      <li class="daily-statistics__item">
+                        <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">
+                          <img src="img/day-stat-4.svg" alt width="102" height="100" loading="lazy">
+                        </div>
+                        <p class="h5  daily-statistics__title">10 000+ online participants</p>
+                      </li>
+                    </ul>
                   </section>
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Час:</h3>
-                    <div class="event-details__value"><time datetime="10:00:00">10:00 - 16:00</time></div>
-                  </section>
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Де:</h3>
-                    <div class="event-details__value">Online</div>
-                  </section>
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Час, що залишився:</h3>
-                    <div class="event-details__value">                      <div class="countdown" data-deadline="2023-12-31 18:45:00">                        <div class="countdown__inner">                          <div class="countdown__number" data-divider=":">                            <span class="days countdown__time"></span>                            <span class="countdown__text">дн.</span>                          </div>                          <div class="countdown__number" data-divider=":">                            <span class="hours countdown__time"></span>                            <span class="countdown__text">час.</span>                          </div>                          <div class="countdown__number">                            <span class="minutes countdown__time"></span>                            <span class="countdown__text">хв.</span>                          </div>                          <div class="countdown__number" style="display:none;">                            <span class="seconds countdown__time"></span>                            <span class="countdown__text">сек</span>                          </div>                        </div>                        <div class="countdown__deadline-message">                          Подія завершилася!                        </div>                      </div>                    </div>
-                  </section>
-                  <p class="h3">Sign up for the event</p>
-                  <p class="event-details__info">If you would like to participate in this event, please fill out the form and we will contact you.</p>
-                  <a href="#" class="btn-ondark" target="_blank" rel="nofollow noopener">Заповніть форму</a>
-                </div>
               </aside>
             </div>
-          </div>          <section class="daily-statistics">            <!--DEV            @ @include('blocks/marked-headings/marked-headings.html', {              "tag": "h2",              "tagInner": "span",              "href": "href=''",              "text": "Напрямки роботи",              "addClass": "marked-headings--link"            })            -->            <h2 class="marked-headings  ">              <span class="marked-headings__text">This day in numbers</span>            </h2>            <ul class="list-nostyled  row  daily-statistics__list">              <li class="daily-statistics__item">                <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">                  <img src="img/day-stat-1.svg" alt width="295" height="197" loading="lazy">                </div>                <p class="h3  daily-statistics__title">10 000+ online participants</p>              </li>              <li class="daily-statistics__item">                <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">                  <img src="img/day-stat-2.svg" alt width="295" height="197" loading="lazy">                </div>                <p class="h3  daily-statistics__title">30+ most prominent speakers</p>              </li>              <li class="daily-statistics__item">                <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">                  <img src="img/day-stat-3.svg" alt width="295" height="197" loading="lazy">                </div>                <p class="h3  daily-statistics__title">4 sessions and 8 hours discussions</p>              </li>              <li class="daily-statistics__item">                <div class="embed-responsive embed-responsive--2-2  daily-statistics__img">                  <img src="img/day-stat-4.svg" alt width="295" height="197" loading="lazy">                </div>                <p class="h3  daily-statistics__title">10 000+ online participants</p>              </li>            </ul>          </section>          <!--DEV
-          @ @include('blocks/speakers-slider/speakers-slider.html')
-          -->
+          </div>
           <section class="speakers-slider">            <h2 class="marked-headings  ">              <span class="marked-headings__text">speakers</span>            </h2>            <div class="swiper  speakers-slider__container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide  speakers-slider__slide">
@@ -191,38 +197,7 @@
           <section class="partners-slider">            <h2 class="marked-headings  ">              <span class="marked-headings__text">Sponsors</span>            </h2>            <div class="swiper  partners-slider__container">
               <div class="swiper-wrapper">                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-1.webp" type="image/webp">                      <img src="img/partner-1.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>                <!--DEV                @ @include('blocks/partners-slider/partners-slider.html', {                  "img": "partner-1",                })                -->                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-2.webp" type="image/webp">                      <img src="img/partner-2.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>                <!--DEV                @ @include('blocks/partners-slider/partners-slider.html', {                  "img": "partner-1",                })                -->                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-3.webp" type="image/webp">                      <img src="img/partner-3.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>                <!--DEV                @ @include('blocks/partners-slider/partners-slider.html', {                  "img": "partner-1",                })                -->                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-4.webp" type="image/webp">                      <img src="img/partner-4.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>                <!--DEV                @ @include('blocks/partners-slider/partners-slider.html', {                  "img": "partner-1",                })                -->                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-5.webp" type="image/webp">                      <img src="img/partner-5.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>                <!--DEV                @ @include('blocks/partners-slider/partners-slider.html', {                  "img": "partner-1",                })                -->                <div class="swiper-slide  partners-slider__slide">                  <a href="#" class="partners-slider__link" title="Title" target="_blank" rel="nofollow noopener">                    <picture>                      <source srcset="img/partner-6.webp" type="image/webp">                      <img src="img/partner-6.png" width="295" height="119" alt="Text" loading="lazy">                    </picture>                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>                  </a>                </div>              </div>
             </div>
-          </section>
-          <section class="big-media">
-            <div class="big-media__inner">
-              <div class="big-media__text-wrapper">
-                <h2 class="visually-hidden">Видеоотчет с прошедшего события</h2>
-                <p class="h3  big-media__title">Missed the broadcast?</p>
-                <div class="h4  big-media__text">
-                  <p>The event will be broadcast live on the YouTube platform.</p>
-                  <p>Follow the link!</p>
-                </div>
-              </div>
-              <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
-                <picture>
-                  <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">
-                  <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">
-                    <!-- 426x240 -->
-                  <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
-                  <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
-                    <!-- 576x324 -->
-                  <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
-                  <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
-                    <!-- 735x413 -->
-                  <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
-                  <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
-                    <!-- 448x252 -->
-                  <img src="img/video-placeholder.jpg" alt="Alt text" width height loading="lazy">
-                </picture>
-                <span class="lazy-video__btn" aria-hidden="true"></span>
-              </a>
-            </div>
-          </section>
-          <section class="media-card">            <h2 class="marked-headings  ">              <span class="marked-headings__text">MEDIA</span>            </h2>            <div class="row  media-card__inner">
+          </section>          <section class="big-media">            <div class="big-media__inner">              <div class="big-media__text-wrapper">                <h2 class="visually-hidden">Видеоотчет с прошедшего события</h2>                <p class="h3  big-media__title">Missed the broadcast?</p>                <div class="h4  big-media__text">                  <p>The event will be broadcast live on the YouTube platform.</p>                  <p>Follow the link!</p>                </div>              </div>              <!--DEV              @ @include('blocks/lazy-video/lazy-video.html')              -->              <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">                <picture>                  <source srcset="img/video-placeholder.webp" media="(min-width: 1280px)" type="image/webp">                  <source srcset="img/video-placeholder.jpg" media="(min-width: 1280px)">                    <!-- 426x240 -->                  <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">                  <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">                    <!-- 576x324 -->                  <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">                  <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">                    <!-- 735x413 -->                  <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">                  <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">                    <!-- 448x252 -->                  <img src="img/video-placeholder.jpg" alt="Alt text" width height loading="lazy">                </picture>                <span class="lazy-video__btn" aria-hidden="true"></span>              </a>            </div>          </section>          <section class="media-card">            <h2 class="marked-headings  ">              <span class="marked-headings__text">MEDIA</span>            </h2>            <div class="row  media-card__inner">
               <div class="media-card__col">
                 <figure class="media-card__fig">
                   <a href="#" class="embed-responsive  lazy-video" data-video="XZ-7gYp3lTg" title="Video name">
@@ -293,105 +268,7 @@
                 </figure>
               </div>
             </div>
-          </section>
-          <section class="photo-gallery">            <h2 class="marked-headings  ">              <span class="marked-headings__text">photos</span>            </h2>            <div class="row  photo-gallery__inner">
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 1280px)">
-                      <!-- 368x245 -->
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 992px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 992px)">
-                      <!-- 576x384 -->
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 768px)">
-                      <!-- 432x288 -->
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 480px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 480px)">
-                      <!-- 735x490 -->
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
-                      <!-- 448x299 -->
-                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-              <div class="photo-gallery__col">
-                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">
-                  <picture>
-                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">
-                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">
-                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </section>
-          <section class="analytics-card__wrapper">            <h2 class="marked-headings  ">              <span class="marked-headings__text">presentation</span>            </h2>            <div class="row  analytics-card__row">
+          </section>          <section class="photo-gallery">            <!--DEV            @ @include('blocks/marked-headings/marked-headings.html', {              "tag": "h2",              "tagInner": "span",              "href": "href=''",              "text": "Напрямки роботи",              "addClass": "marked-headings--link"            })            -->            <h2 class="marked-headings  ">              <span class="marked-headings__text">photos</span>            </h2>            <div class="row  photo-gallery__inner">              <div class="photo-gallery__col">                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-1.webp" media="(min-width: 1280px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 1280px)">                      <!-- 368x245 -->                    <source srcset="img/gallery-item-1.webp" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 992px)">                      <!-- 576x384 -->                    <source srcset="img/gallery-item-1.webp" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 768px)">                      <!-- 432x288 -->                    <source srcset="img/gallery-item-1.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 480px)">                      <!-- 735x490 -->                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">                      <!-- 448x299 -->                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-1.jpg" data-fancybox="gallery" data-caption="Caption #1" title="Фото 1" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-1.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-1.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-1.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-2.jpg" data-fancybox="gallery" data-caption="Caption #2" title="Фото 2" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-2.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-2.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-2.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>              <div class="photo-gallery__col">                <a href="img/gallery-item-3.jpg" data-fancybox="gallery" data-caption="Caption #3" title="Фото 3" class="embed-responsive embed-responsive--3-2  photo-gallery__item">                  <picture>                    <source srcset="img/gallery-item-3.webp" media="(min-width: 360px)" type="image/webp">                    <source srcset="img/gallery-item-3.jpg" media="(min-width: 360px)">                    <img src="img/gallery-item-3.jpg" alt width="1629" height="1085" loading="lazy">                  </picture>                </a>              </div>            </div>          </section>          <section class="analytics-card__wrapper">            <h2 class="marked-headings  ">              <span class="marked-headings__text">presentation</span>            </h2>            <div class="row  analytics-card__row">
               <div class="analytics-card__col">                <article class="analytics-card">                  <div class="row  analytics-card__inner-row">                    <div class="analytics-card__img-col">                      <a href="#" class="embed-responsive embed-responsive--2-3  analytics-card__img" tabindex="-1">                        <picture>                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">                          <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="885" height="1326" loading="lazy">                        </picture>                      </a>                      <a href="#" class="download-link" download>                        <span>Завантажити <span class="visually-hidden">документ</span></span>                        <svg width="19" height="19" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>                      </a>                    </div>                    <div class="analytics-card__text-col">                      <div class="analytics-card__text">                        <div class="tag__wrapper">                          <span class="tag">Project</span>                          <span class="tag">Industry</span>                          <time class="publishedon" datetime="2011-01-12">3/08/2023</time>                        </div>                        <h2 class="h4  analytics-card__title"><a href="#" tabindex="-1">Державне фінансування проектів Green Deal Ukraine</a></h2>                        <p class="analytics-card__intro">Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.</p>                        <a href="#" class="read-more">Читати більше</a>                      </div>                    </div>                  </div>                </article>              </div>
               <div class="analytics-card__col">                <article class="analytics-card">                  <div class="row  analytics-card__inner-row">                    <div class="analytics-card__img-col">                      <a href="#" class="embed-responsive embed-responsive--2-3  analytics-card__img" tabindex="-1">                        <picture>                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">                          <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="885" height="1326" loading="lazy">                        </picture>                      </a>                      <a href="#" class="download-link" download>                        <span>Завантажити <span class="visually-hidden">документ</span></span>                        <svg width="19" height="19" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>                      </a>                    </div>                    <div class="analytics-card__text-col">                      <div class="analytics-card__text">                        <div class="tag__wrapper">                          <span class="tag">Project</span>                          <span class="tag">Industry</span>                          <time class="publishedon" datetime="2011-01-12">3/08/2023</time>                        </div>                        <h2 class="h4  analytics-card__title"><a href="#" tabindex="-1">Державне фінансування проектів</a></h2>                        <p class="analytics-card__intro">Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування.</p>                        <a href="#" class="read-more">Читати більше</a>                      </div>                    </div>                  </div>                </article>              </div>
               <div class="analytics-card__col">                <article class="analytics-card">                  <div class="row  analytics-card__inner-row">                    <div class="analytics-card__img-col">                      <a href="#" class="embed-responsive embed-responsive--2-3  analytics-card__img" tabindex="-1">                        <picture>                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.webp?text=Image&font=lora" media="(min-width: 360px)" type="image/webp">                          <source srcset="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" media="(min-width: 360px)">                          <img src="https://placehold.co/885x1326/E9EBEC/CCCCCC.jpeg?text=Image&font=lora" alt="Text" width="885" height="1326" loading="lazy">                        </picture>                      </a>                      <a href="#" class="download-link" download>                        <span>Завантажити <span class="visually-hidden">документ</span></span>                        <svg width="19" height="19" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"/></svg>                      </a>                    </div>                    <div class="analytics-card__text-col">                      <div class="analytics-card__text">                        <div class="tag__wrapper">                          <span class="tag">Project</span>                          <span class="tag">Industry</span>                          <time class="publishedon" datetime="2011-01-12">3/08/2023</time>                        </div>                        <h2 class="h4  analytics-card__title"><a href="#" tabindex="-1">Державне фінансування проектів Green Deal Ukraine</a></h2>                        <p class="analytics-card__intro">Цей звіт базується на розширеній та оновленій версії бази даних Global Alliance Powerfuels про державні програми фінансування екологічного водню та інших видів палива.</p>                        <a href="#" class="read-more">Читати більше</a>                      </div>                    </div>                  </div>                </article>              </div>

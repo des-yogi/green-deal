@@ -90,45 +90,12 @@
               <aside class="event-details">
                 <h2 class="visually-hidden">Детальна інформація про подію</h2>
 
-                <div class="event-details__inner">
-
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Дата:</h3>
-                    <div class="event-details__value"><time datetime="2011-01-12">17.08.2023</time></div>
-                  </section>
-
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Час:</h3>
-                    <div class="event-details__value"><time datetime="10:00:00">10:00 - 16:00</time></div>
-                  </section>
-
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Де:</h3>
-                    <div class="event-details__value">Online</div>
-                  </section>
-
-                  <section class="event-details__row">
-                    <h3 class="event-details__caption">Час, що залишився:</h3>
-                    <div class="event-details__value">
-                      @@include('blocks/countdown/countdown.html', {
-                        "deadline": "2023-12-31 18:45:00"
-                      })
-                    </div>
-                  </section>
-
-                  <p class="h3">Sign up for the event</p>
-                  <p class="event-details__info">If you would like to participate in this event, please fill out the form and we will contact you.</p>
-
-                  <a href="#" class="btn-ondark" target="_blank" rel="nofollow noopener">Заповніть форму</a>
-
-                </div>
+                  @@include('blocks/daily-statistics/daily-statistics.html')
 
               </aside>
             </div>
 
           </div>
-
-          @@include('blocks/daily-statistics/daily-statistics.html')
 
           @@include('blocks/speakers-slider/speakers-slider.html')
 
