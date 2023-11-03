@@ -3,28 +3,33 @@
   $block-name:                &; // #{$block-name}__element
 
   &__list {
-    gap: 32px 0;
+    gap: 24px 0;
 
-    @media (min-width: $screen-xl) {
-      gap: 40px 0;
-    }
+    // @media (min-width: $screen-xl) {
+    //   gap: 32px 0;
+    // }
   }
 
   &__item {
     @include col(xs, 12);
     @include col(md, 6, $grid-columns, 32px);
-    @include col(xl, 3, $grid-columns, 40px);
+    @include col(xl, 12, $grid-columns, 40px);
+    display: flex;
+    align-items: center;
   }
 
   &__title {
-    margin: 16px 0 0;
-    text-align: center;
+    flex: 1 1 auto;
+    width: auto;
+    margin: 0 0 24px;
   }
 
   &__img {
+    flex: 0 0 102px;
+    width: 102px;
+    height: 100px;
 
     img {
-      display: block;
       object-fit: cover;
       object-position: center;
     }

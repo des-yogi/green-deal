@@ -489,12 +489,12 @@ a {
 // @include col(lg, 4, $grid-columns, 32px);
 // @include col(xl, 2, $grid-columns, 40px);
 
-.test {
-  @include col(xs, 12);
-  @include col(md, 6, $grid-columns, 32px);
-  @include col(xl, 4, $grid-columns, 40px);
-  @include col(xxl, 3, $grid-columns, 40px);
-}
+// .test {
+//   @include col(xs, 12);
+//   @include col(md, 6, $grid-columns, 32px);
+//   @include col(xl, 4, $grid-columns, 40px);
+//   @include col(xxl, 3, $grid-columns, 40px);
+// }
 
 .controls-wrapper {
   display: flex;
