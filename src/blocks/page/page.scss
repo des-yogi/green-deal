@@ -501,10 +501,6 @@ a {
   flex-wrap: wrap;
   gap: 40px;
 
-  @media (min-width: $screen-md) {
-    justify-content: space-between;
-  }
-
   .share-links {
     flex: 0 0 auto;
   }
