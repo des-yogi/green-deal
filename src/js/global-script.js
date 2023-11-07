@@ -52,9 +52,9 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   //<div style="background-image: url('/images/image.webp')" data-bg="/images/image.jpg" data-bg-webp="/images/image.webp"></div>
 }());
 
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
+// Fancybox.bind("[data-fancybox]", {
+//   // Your custom options
+// });
 
 // Если на проекте jQuery
 // $( document ).ready(function() {
