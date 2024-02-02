@@ -65,7 +65,12 @@
     "big-media": [],
     "media-card": [],
     "photo-gallery": [],
-    "lazy-video": []
+    "lazy-video": [],
+    "weekly-charts": [],
+    "chart-card": [],
+    "books": [],
+    "book-card": [],
+    "book-nav": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -76,7 +81,8 @@
     "../../node_modules/bootstrap/scss/_offcanvas",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "../../node_modules/swiper/swiper-bundle.css"
+    "../../node_modules/swiper/swiper-bundle.css",
+    "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -87,7 +93,8 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/autosize/dist/autosize.min.js",
     "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-    "./node_modules/swiper/swiper-bundle.min.js"
+    "./node_modules/swiper/swiper-bundle.min.js",
+    "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

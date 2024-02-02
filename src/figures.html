@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Figure of the week</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/top-decor/top-decor.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  main-content">
+
+          <div class="news-card__page">
+            <h1 class="page__title">Figure of the week</h1>
+
+            <div class="main-content__intro">
+              <p>In this section, we will make visual representations of data each week and tell a short story about it. We will present a graph highlighting trends, insights, and noteworthy information across various sectors. Whether it's a statistical analysis, a market trend, or a scientific discovery, our Figure of the Week brings data to life, making complex information accessible and engaging.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut sed at necessitatibus, placeat animi nihil officiis, nemo? Magni, sint minima cupiditate saepe.</p>
+            </div>
+
+            <div class="main-content__archive">
+
+              @@include('blocks/marked-headings/marked-headings.html', {
+                "tag": "h2",
+                "tagInner": "span",
+                "href": "",
+                "text": "january",
+                "addClass": ""
+              })
+
+              <section class="main-content__archive-month">
+                <div class="row  news-card__page-row">
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                    })
+                  </div>
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'If Ukraine follows its neighbour’s development, the car stock could triple'
+                    })
+                  </div>
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                    })
+                  </div>
+
+                </div>
+              </section>
+
+            </div>
+
+            <div class="main-content__archive">
+
+              @@include('blocks/marked-headings/marked-headings.html', {
+                "tag": "h2",
+                "tagInner": "span",
+                "href": "",
+                "text": "february",
+                "addClass": ""
+              })
+
+              <section class="main-content__archive-month">
+                <div class="row  news-card__page-row">
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                    })
+                  </div>
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'If Ukraine follows its neighbour’s development, the car stock could triple'
+                    })
+                  </div>
+
+                  <div class="news-card__page-col">
+                    @@include('blocks/chart-card/chart-card.html', {
+                      "addClass": "chart-card--fan-box",
+                      "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                    })
+                  </div>
+
+                </div>
+              </section>
+
+            </div>
+
+          </div>
+
+          @@include('blocks/pagination/pagination.html')
+
+          <!-- для пагинации на этой странице установить mb: 40 -->
+          <nav class="main-content__archive-nav">
+            <h3 style="margin:0;">Archive:</h3>
+
+            <ul class="list-nostyled  main-content__archive-list">
+              <li class="main-content__archive-item">
+                <a href="#" class="main-content__archive-link">
+                  2021
+                </a>
+              </li>
+              <li class="main-content__archive-item">
+                <a href="#" class="main-content__archive-link">
+                  2022
+                </a>
+              </li>
+              <li class="main-content__archive-item">
+                <a href="#" class="main-content__archive-link">
+                  2023
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        @@include('blocks/contact-inset/contact-inset.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-panel-top/search-panel-top.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

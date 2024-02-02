@@ -130,9 +130,9 @@ h2 {
 h3 {
   font-size: $font-size--h3;
 
-  @media (min-width: $screen-xl) {
-    font-size: $font-size--h3 * 1.0833;
-  }
+  // @media (min-width: $screen-xl) {
+  //   font-size: $font-size--h3 * 1.0833;
+  // }
 }
 
 .h4,

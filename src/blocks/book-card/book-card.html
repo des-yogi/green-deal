@@ -1,0 +1,30 @@
+<!--DEV
+@ @include('blocks/book-card/book-card.html', {
+  "title": "Rapid Industrial Diagnostic Study",
+  "publisher": "Unido",
+  "img": "cover-1"
+})
+-->
+
+<article class="book-card">
+  <div class="embed-responsive embed-responsive--2-3  book-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+      <img src="img/@@img.jpg" width="367" height="519" alt="@@title" loading="lazy">
+    </picture>
+  </div>
+
+  <a href="#" class="download-link  book-card__download-link" download>
+    <span>Download <span class="visually-hidden">the doc</span></span>
+    <svg width="32" height="32" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#download"></use></svg>
+  </a>
+
+  <div class="book-card__text">
+    <p class="book-card__info">
+      <span class="book-card__publisher">@@publisher</span>
+      <span class="book-card__date">Feb 23</span>
+    </p>
+    <h3 class="h4  book-card__title">@@title</h3>
+  </div>
+</article>
