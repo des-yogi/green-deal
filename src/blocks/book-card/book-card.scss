@@ -1,0 +1,56 @@
+.book-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    width: 185px;
+    margin-right: auto;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid $secondary-color;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__download-link {
+    width: 185px;
+    margin-right: auto;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
+    font-size: 16px;
+  }
+
+  &__publisher {
+    padding: 1px 8px;
+    background-color: $light-gray;
+  }
+
+  &__date {
+    color: $text-muted;
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: none;
+  }
+}

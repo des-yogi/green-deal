@@ -54,6 +54,54 @@
             </div>
           </section>
 
+          <section class="news-slider  weekly-charts">
+            @@include('blocks/marked-headings/marked-headings.html', {
+              "tag": "h2",
+              "tagInner": "a",
+              "href": "href='#'",
+              "text": "Фігури тижня",
+              "addClass": "marked-headings--link"
+            })
+
+            <div class="swiper  weekly-charts__container">
+              <div class="swiper-wrapper">
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide  chart-card--fan-box",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                })
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide chart-card--fan-box",
+                  "title": 'If Ukraine follows its neighbour’s development, the car stock could triple'
+                })
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide chart-card--fan-box",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                })
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide chart-card--fan-box",
+                  "title": 'If Ukraine follows its neighbour’s development, the car stock could triple'
+                })
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide chart-card--fan-box",
+                  "title": 'Нова публікація: Моделі відстеження для рідкого палива'
+                })
+
+                @@include('blocks/chart-card/chart-card.html', {
+                  "addClass": "swiper-slide chart-card--fan-box",
+                  "title": 'If Ukraine follows its neighbour’s development, the car stock could triple'
+                })
+
+              </div>
+
+              @@include('blocks/swiper-controls/swiper-controls.html')
+            </div>
+          </section>
+
           <section class="news-slider">
             @@include('blocks/marked-headings/marked-headings.html', {
               "tag": "h2",

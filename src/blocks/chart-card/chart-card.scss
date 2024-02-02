@@ -1,0 +1,65 @@
+.chart-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    //position: relative;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-transform: none;
+
+    a {
+      color: inherit;
+
+      &:active {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+
+  &__descr {
+    margin-top: 24px;
+  }
+
+  &--fan-box {
+
+    #{$block-name}__img {
+
+      &:hover,
+      &:focus {
+
+        &::after {
+          background-color: $play-link--hover;
+          background-image: svg-load('../blocks/sprite-svg/svg/search.svg', fill=$text-color);
+        }
+      }
+
+        &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 48px;
+        height: 48px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 26px;
+        background-image: svg-load('../blocks/sprite-svg/svg/search.svg', fill=$white);
+        transition: all $transition-time;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.books {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__lead {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__nav-col {
+    @include col(xs, 12);
+    //@include col(md, 12, $grid-columns, 32px);
+    //@include col(xl, 12, $grid-columns, 40px);
+    @include col(xxl, 3, $grid-columns, 40px);
+    margin-bottom: 56px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 100px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-col {
+    @include col(xs, 12);
+    //@include col(xl, 12, $grid-columns, 40px);
+    @include col(xxl, 9, $grid-columns, 40px);
+  }
+
+  &__list {
+    //gap: 24px 0;
+    gap: 40px 0;
+
+    // @media (min-width: $screen-md) {
+    //   gap: 32px 0;
+    // }
+
+    // @media (min-width: $screen-xl) {
+    //   gap: 40px 0;
+    // }
+  }
+
+  &__item {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 32px);
+    @include col(xl, 4, $grid-columns, 40px);
+  }
+}

@@ -13,6 +13,7 @@
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
 @import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
 @import './src/blocks/burger/burger.scss';
@@ -79,4 +80,9 @@
 @import './src/blocks/media-card/media-card.scss';
 @import './src/blocks/photo-gallery/photo-gallery.scss';
 @import './src/blocks/lazy-video/lazy-video.scss';
+@import './src/blocks/weekly-charts/weekly-charts.scss';
+@import './src/blocks/chart-card/chart-card.scss';
+@import './src/blocks/books/books.scss';
+@import './src/blocks/book-card/book-card.scss';
+@import './src/blocks/book-nav/book-nav.scss';
 @import './src/scss/print.scss';
