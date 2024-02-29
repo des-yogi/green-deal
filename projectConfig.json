@@ -70,7 +70,12 @@
     "chart-card": [],
     "books": [],
     "book-card": [],
-    "book-nav": []
+    "book-nav": [],
+    "sidebar-block-menu": [],
+    "program-section": [],
+    "program-informer": [],
+    "program-ask": [],
+    "trainig-program": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
