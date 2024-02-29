@@ -1,0 +1,39 @@
+.sidebar-block-menu {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 40px 24px;
+  border: 2px solid $secondary-color;
+  border-radius: $border-radius--lg;
+
+  @media (min-width: $screen-xl) {
+    position: sticky;
+    top: 124px;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & + * {
+      margin-top: 24px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    min-height: 48px;
+    text-align: center;
+    white-space: normal;
+
+    &.active {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+}

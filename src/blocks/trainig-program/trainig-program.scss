@@ -1,0 +1,63 @@
+.trainig-program {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__lead {
+    font-size: $font-size-lg;
+    font-weight: 600;
+  }
+
+  &__support {
+    margin-top: 56px;
+    margin-bottom: 56px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 72px;
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    & > *:not(:last-child) {
+      margin-top: 56px;
+      margin-bottom: 56px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 72px;
+        margin-bottom: 72px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  &__block {
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__block-title {
+    margin-top: 0;
+  }
+
+  &__sidebar-col {
+
+    @media (max-width: $screen-xl - 1) {
+      order: -1;
+    }
+  }
+
+  &__highlighted {
+    padding: 16px;
+    background-color: $light-gray;
+    border-top: 5px solid $secondary-color;
+  }
+}
