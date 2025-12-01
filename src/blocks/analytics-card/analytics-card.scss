@@ -49,6 +49,17 @@
     }
   }
 
+  &__report-content {
+
+    &:has(.analytics-card__img-wrapper) {
+
+      & ul, ol {
+        overflow: hidden; // для решения проблемы с float картинкам
+        //list-style-position: inside;
+      }
+    }
+  }
+
   &__img-wrapper {
     margin-bottom: 32px;
 
