@@ -75,7 +75,9 @@
     "program-section": [],
     "program-informer": [],
     "program-ask": [],
-    "trainig-program": []
+    "trainig-program": [],
+    "filters": [],
+    "field-select": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -107,8 +109,12 @@
   "addImages": [
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
   ],
-  "copiedCss": [],
-  "copiedJs": [],
+  "copiedCss": [
+    "./node_modules/slim-select/dist/slimselect.css"
+  ],
+  "copiedJs": [
+    "./node_modules/slim-select/dist/slimselect.iife.js"
+  ],
   "dirs": {
     "srcPath": "./src/",
     "buildPath": "./build/",

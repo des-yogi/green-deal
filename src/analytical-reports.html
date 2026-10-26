@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Аналітичні звіти</title>
+  <link href="css/slimselect.css" rel="stylesheet">
   @@include('_include/page_head.html')
 </head>
 
@@ -33,6 +34,8 @@
               "text": "Публікації",
               "addClass": ""
             })
+
+            @@include('blocks/filters/filters.html')
 
             <div class="row  analytics-card__page-row">
 
@@ -100,7 +103,87 @@
 
   @@include('blocks/search-panel-top/search-panel-top.html')
 
+  <script src="js/slimselect.iife.js"></script>
   @@include('_include/page_bottom.html')
+
+  <script>
+    (function () {
+      // UI texts of Slim Select for each site language
+      const SELECT_TEXTS = {
+        uk: {
+          searchText: 'Нічого не знайдено',
+          searchingText: 'Пошук...',
+          resultsText: 'Доступно результатів: {count}',
+          deselectText: 'Очистити',
+          removeText: 'Видалити',
+          // placeholderText: 'Оберіть',
+        },
+        en: {
+          searchText: 'No results',
+          searchingText: 'Searching...',
+          resultsText: '{count} results available',
+          deselectText: 'Clear',
+          removeText: 'Remove',
+          // placeholderText: 'Select',
+        },
+      };
+
+      const DEFAULT_LANG = 'en';
+
+      // Registry of created instances, also protects from double initialization
+      const selectInstances = new WeakMap();
+
+      // Nearest [lang] ancestor wins, so a local lang attribute can override <html lang>
+      function getTexts(select) {
+        const lang = (select.closest('[lang]')?.lang || DEFAULT_LANG).slice(0, 2).toLowerCase();
+        return SELECT_TEXTS[lang] ?? SELECT_TEXTS[DEFAULT_LANG];
+      }
+
+      function initSelects(root = document) {
+        root.querySelectorAll('.field-select__select').forEach((select) => {
+          if (selectInstances.has(select)) return;
+
+          selectInstances.set(select, new SlimSelect({
+            select,
+            settings: {
+              placeholderText: select.dataset.placeholder,
+              showSearch: false,
+              alwaysOpen: false,
+              closeOnSelect: false,
+              hideSelected: true,
+              searchText: 'Нічого не знайдено',
+              modal: 'mobile',
+              ...getTexts(select),
+            }
+          }));
+        });
+      }
+
+      // Initial page load
+      initSelects();
+
+      // Reset button: clear every multiselect in the form and refresh the results
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.js-filter-reset');
+        if (!btn) return;
+
+        const form = btn.closest('form');
+        if (!form) return;
+
+        // Reset native fields (text inputs, plain selects, checkboxes)
+        form.reset();
+
+        // Native reset does not update Slim Select, so clear each instance by hand
+        form.querySelectorAll('.field-select__select').forEach((select) => {
+          selectInstances.get(select)?.setSelected([]);
+        });
+
+        // Send the request once: native reset does not trigger HTMX
+        // htmx.trigger(form, 'submit'); // глючит
+        form.requestSubmit();
+      });
+    })()
+  </script>
 
 </body>
 </html>

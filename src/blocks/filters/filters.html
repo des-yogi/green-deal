@@ -1,0 +1,80 @@
+<!--DEV
+@ @include('blocks/filters/filters.html')
+-->
+
+<section class="filters">
+  <h3 class="filters__title">Фільтри</h3>
+
+  <form class="filters__form" action="#" method="get">
+
+    <ul class="list-nostyled  filters__list">
+
+      <li>
+        <div class="field-select">
+          <span class="field-select__select-wrap">
+            <select class="field-select__select" name="year" multiple>
+              <option data-placeholder="true">Рік</option>
+              <option value="value1">2021</option>
+              <option value="value2">2022</option>
+              <option value="value3">2023</option>
+              <option value="value4">2024</option>
+              <option value="value4">2025</option>
+            </select>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="field-select">
+          <span class="field-select__select-wrap">
+            <select class="field-select__select" name="doc-type" multiple>
+              <option data-placeholder="true">Тип документа</option>
+              <option value="value1">Значение 1</option>
+              <option value="value2">Значение 2</option>
+              <option value="value3">Значение 3</option>
+              <option value="value4">Значение 4</option>
+              <option value="value4">Значение 5</option>
+            </select>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="field-select">
+          <span class="field-select__select-wrap">
+            <select class="field-select__select" name="keywords" multiple>
+              <option data-placeholder="true">Ключові слова</option>
+              <option value="value1">Значение 1</option>
+              <option value="value2">Значение 2</option>
+              <option value="value3">Значение 3</option>
+              <option value="value4">Значение 4</option>
+              <option value="value4">Значение 5</option>
+            </select>
+          </span>
+        </div>
+      </li>
+
+      <li>
+        <div class="field-select">
+          <span class="field-select__select-wrap">
+            <select class="field-select__select" name="authors" multiple>
+              <option data-placeholder="true">Автори</option>
+              <option value="value1">Значение 1</option>
+              <option value="value2">Значение 2</option>
+              <option value="value3">Значение 3</option>
+              <option value="value4">Значение 4</option>
+              <option value="value4">Значение 5</option>
+            </select>
+          </span>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="filters__form-controls">
+      <button class="btn  btn--outlined  filter__reset js-filter-reset" type="button">Скинути</button>
+      <button class="btn" type="submit">Застосувати</button>
+    </div>
+
+  </form>
+</section>

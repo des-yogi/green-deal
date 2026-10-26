@@ -1,0 +1,36 @@
+.filters {
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 24px 16px;
+  margin-bottom: 40px;
+  border: 2px solid $secondary-color;
+  border-radius: $border-radius--lg;
+
+  @media (min-width: $screen-md) {
+    padding: 40px 24px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-inline: 40px;
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__list,
+  &__form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+  }
+}
