@@ -49,6 +49,12 @@
     }
   }
 
+  &__pagination-col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 32px);
+    @include col(xl, 12, $grid-columns, 40px);
+  }
+
   &__report-content {
 
     &:has(.analytics-card__img-wrapper) {
